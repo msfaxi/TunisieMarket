@@ -1,1 +1,3 @@
+parameters:
+   sylius.menu_builder.frontend.class: AppBundle\Menu\FrontendMenuBuilder
 services: ~
