@@ -64,7 +64,7 @@ sylius:
     homepage:
         splash:
             headline: Bienvenue sur Tunisie Market
-            subheadline: Solution e-commerce moderne pour le Marché Tunisien
+            subheadline: Solution e-commerce moderne pour le marché Tunisien
     menu:
         publishable: Publié
     meta:
