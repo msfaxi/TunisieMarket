@@ -117,7 +117,7 @@ sylius:
     security:
         login:
             info: |-
-                Veuillez vous connecter à l'aide de l'email <b>"sylius@example.com"</b> et <b>"sylius"</b> comme mot de passe. <small>Votre guide, M. Sylius</small>
+                Veuillez vous connecter à l'aide de votre email
             no_account: "Vous n'avez encore pas de compte"
     shipment:
         no_items: "Il n'y a aucun élément à afficher"
@@ -412,7 +412,7 @@ sylius:
         logged_in_as: 'Connecté en tant que %username%'
         login: Connexion
         login_button: Connexion
-        login_sylius_store: 'Connexion <small>Boutique Sylius</small>'
+        login_sylius_store: 'Connexion'
         logout: Déconnexion
         main_taxon: Taxinomie principale
         male: Homme
