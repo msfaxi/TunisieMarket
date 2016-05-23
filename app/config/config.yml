@@ -39,6 +39,22 @@ assetic:
     bundles:        ['SyliusWebBundle', 'CmfCreateBundle', 'SyliusResourceBundle']
     filters:
         cssrewrite: ~
+    assets:
+        font-awesome-otf:
+            inputs: '%kernel.root_dir%/../web/fonts/FontAwesome.otf'
+            output: 'fonts/FontAwesome.otf'
+        font-awesome-eot:
+            inputs: '%kernel.root_dir%/../web/fonts/fontawesome-webfont.eot'
+            output: 'fonts/fontawesome-webfont.eot'
+        font-awesome-svg:
+            inputs: '%kernel.root_dir%/../web/fonts/fontawesome-webfont.svg'
+            output: 'fonts/fontawesome-webfont.svg'
+        font-awesome-ttf:
+            inputs: '%kernel.root_dir%/../web/fonts/fontawesome-webfont.ttf'
+            output: 'fonts/fontawesome-webfont.ttf'
+        font-awesome-woff:
+            inputs: '%kernel.root_dir%/../web/fonts/fontawesome-webfont.woff'
+            output: 'fonts/fontawesome-webfont.woff'
 
 doctrine:
     dbal:
