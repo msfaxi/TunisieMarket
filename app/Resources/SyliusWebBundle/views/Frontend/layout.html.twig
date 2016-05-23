@@ -22,21 +22,21 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
         
         <!-- favicon icon -->
-        <link rel="shortcut icon" type="images/png" href="{{ asset('bundles/syliusweb/img/favicon.ico') }}">
+        <link rel="shortcut icon" type="images/png" href="{{ asset('chamo/img/favicon.ico') }}">
         {# stylesheets... #}
         {% block stylesheets %}
              {% stylesheets output='assets/compiled/frontend.css' filter='cssrewrite'
-             'bundles/syliusweb/css/jquery-ui.min.css'
-             'bundles/syliusweb/css/bootstrap.min.css'
-             'bundles/syliusweb/css/responsive.css'
-             'bundles/syliusweb/css/jquery.bxslider.min.css'
-             'bundles/syliusweb/css/animate.css'
-             '%kernel.root_dir%/Resources/SyliusWebBundle/public/css/font-awesome.min.css'
-             'bundles/syliusweb/css/meanmenu.min.css'
-             'bundles/syliusweb/css/owl.carousel.css'
+             'chamo/css/jquery-ui.min.css'
+             'chamo/css/bootstrap.min.css'
+             'chamo/css/responsive.css'
+             'chamo/css/jquery.bxslider.min.css'
+             'chamo/css/animate.css'
+             'chamo/css/font-awesome.min.css'
+             'chamo/css/meanmenu.min.css'
+             'chamo/css/owl.carousel.css'
              'lib/css/nivo-slider.css'
              'lib/css/preview.css'
-             'bundles/syliusweb/css/style.css'
+             'chamo/css/style.css'
             %}
             <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
             {% endstylesheets %}
@@ -59,8 +59,8 @@
             <div class="slider-area">
                 <div class="bend niceties preview-1">
                     <div id="ensign-nivoslider" class="slides">	
-                        <img src="{{ asset('bundles/syliusweb/img/sliders/S-11.jpg') }}" alt="" title="#slider-direction-1"  />
-                        <img src="{{ asset('bundles/syliusweb/img/sliders/S-12.jpg') }}" alt="" title="#slider-direction-2"  />
+                        <img src="{{ asset('chamo/img/sliders/S-11.jpg') }}" alt="" title="#slider-direction-1"  />
+                        <img src="{{ asset('chamo/img/sliders/S-12.jpg') }}" alt="" title="#slider-direction-2"  />
                     </div>
                     <!-- direction 1 -->
                     <div id="slider-direction-1" class="t-cn slider-direction slider-one">
@@ -84,36 +84,36 @@
                                         <li>
                                             <a href="{{ path('sylius_cart_summary') }}">
                                                 <span class="cart-icon">
-                                                    <img src="{{ asset('bundles/syliusweb/img/cart/h-3.png') }}" alt="">
+                                                    <img src="{{ asset('chamo/img/cart/h-3.png') }}" alt="">
                                                 </span>
                                                 <span class="cart-number">
-                                                 {{ cart.totalItems }}
+
                                                 </span>
                                             </a>
                                             <div class="mini-cart-content home-6">
                                                 <div class="cart-img-details">
                                                     <div class="cart-img-photo">
-                                                        <a href="#"><img src="{{ asset('bundles/syliusweb/img/cart/cart-1.jpg') }}" alt="" /></a>
+                                                        <a href="#"><img src="{{ asset('chamo/img/cart/cart-1.jpg') }}" alt="" /></a>
                                                     </div>
                                                     <div class="cart-img-contaent">
                                                         <a href="#"><h4>Aliquam consequat</h4></a>
                                                         <span class="c-one">1</span>x
                                                         <span class="c-price">£123.00</span> 
                                                     </div>
-                                                    <div class="pro-del"><a href="#"><span class="edit"><img src="{{ asset('bundles/syliusweb/img/icon/btn_edit.gif') }}" alt=""></span> <i class="fa fa-trash"></i></a>
+                                                    <div class="pro-del"><a href="#"><span class="edit"><img src="{{ asset('chamo/img/icon/btn_edit.gif') }}" alt=""></span> <i class="fa fa-trash"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="clear"></div>
                                                 <div class="cart-img-details border-up">	
                                                     <div class="cart-img-photo">
-                                                        <a href="#"><img src="{{ asset('bundles/syliusweb/img/cart/cart-2.jpg') }}" alt="" /></a>
+                                                        <a href="#"><img src="{{ asset('chamo/img/cart/cart-2.jpg') }}" alt="" /></a>
                                                     </div>
                                                     <div class="cart-img-contaent">
                                                         <a href="#"><h4>Proin lectus ipsum</h4></a>
                                                         <span class="c-one">1</span>x
                                                         <span class="c-price">£88.00</span>
                                                     </div>
-                                                    <div class="pro-del"><a href="#"><span class="edit"><img src="{{ asset('bundles/syliusweb/img/icon/btn_edit.gif') }}" alt=""></span> <i class="fa fa-trash"></i></a>
+                                                    <div class="pro-del"><a href="#"><span class="edit"><img src="{{ asset('chamo/img/icon/btn_edit.gif') }}" alt=""></span> <i class="fa fa-trash"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="cart-inner-bottom">
@@ -165,7 +165,7 @@
                         <!--header-logo-start-->
                         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                             <div class="logo-img">
-                                <a href="{{ path('sylius_homepage') }}" title="{{ 'sylius.ui.sylius_logo'|trans }}"><img src="{{ asset('bundles/syliusweb/img/logo/h-3.png') }}" alt=""></a>
+                                <a href="{{ path('sylius_homepage') }}" title="{{ 'sylius.ui.sylius_logo'|trans }}"><img src="{{ asset('chamo/img/logo/h-3.png') }}" alt=""></a>
                             </div>
                         </div>
                         <!--header-logo-end-->
@@ -496,21 +496,21 @@ bunk bed </a></li>
                     <!-- single-banner start -->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="single-banner home-3 home-6">
-                            <a href="#"><span><img src="{{ asset('bundles/syliusweb/img/banner/banner-16.jpg') }}" alt="" /></span></a>
+                            <a href="#"><span><img src="{{ asset('chamo/img/banner/banner-16.jpg') }}" alt="" /></span></a>
                             <p class="banner-text">lamp</p>
                         </div>
                     </div>
                     <!-- single-banner end -->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="single-banner home-3 home-6">
-                            <a href="#"><span><img src="{{ asset('bundles/syliusweb/img/banner/banner-17.jpg') }}" alt="" /></span></a>
+                            <a href="#"><span><img src="{{ asset('chamo/img/banner/banner-17.jpg') }}" alt="" /></span></a>
                             <p class="banner-text">chair</p>
                         </div>
                     </div>
                     <!-- single-banner end -->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="single-banner home-3 home-6">
-                            <a class="last-banner" href="#"><span><img src="{{ asset('bundles/syliusweb/img/banner/banner-18.jpg') }}" alt="" /></span></a>
+                            <a class="last-banner" href="#"><span><img src="{{ asset('chamo/img/banner/banner-18.jpg') }}" alt="" /></span></a>
                             <p class="banner-text">table</p>
                         </div>
                     </div>
@@ -537,7 +537,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/1.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/1.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -573,7 +573,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/2.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/2.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -609,7 +609,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/3.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/3.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -645,7 +645,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/4.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/4.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -681,7 +681,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/5.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/5.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -717,7 +717,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/6.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/6.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -753,7 +753,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/7.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/7.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -790,7 +790,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/8.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/8.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -845,7 +845,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/9.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/9.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -881,7 +881,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/8.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/8.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -917,7 +917,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/7.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/7.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -954,7 +954,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/6.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/6.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -991,7 +991,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/4.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/4.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1027,7 +1027,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/3.jpg') }}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/3.jpg') }}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1063,7 +1063,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/2.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/2.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1099,7 +1099,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/1.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/1.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1144,14 +1144,14 @@ bunk bed </a></li>
                     <!-- single-banner start -->
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="single-banner home-3">
-                            <a href="#"><span><img src="{{ asset('bundles/syliusweb/img/banner/banner-19.jpg') }}" alt="" /></span></a>
+                            <a href="#"><span><img src="{{ asset('chamo/img/banner/banner-19.jpg') }}" alt="" /></span></a>
                         </div>
                     </div>
                     <!-- single-banner end -->
                     <!-- single-banner start -->
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="single-banner home-3">
-                            <a class="last-banner" href="#"><span><img src="{{ asset('bundles/syliusweb/img/banner/banner-20.jpg') }}" alt="" /></span></a>
+                            <a class="last-banner" href="#"><span><img src="{{ asset('chamo/img/banner/banner-20.jpg') }}" alt="" /></span></a>
                         </div>
                     </div>
                     <!-- single-banner end -->
@@ -1177,7 +1177,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/2.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/2.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1213,7 +1213,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/9.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/9.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1249,7 +1249,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/6.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/6.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1285,7 +1285,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/3.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/3.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1321,7 +1321,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/5.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/5.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1357,7 +1357,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/7.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/7.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1393,7 +1393,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/4.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/4.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1429,7 +1429,7 @@ bunk bed </a></li>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('bundles/syliusweb/img/product/h-6/3.jpg')}}" alt="" />
+                                    <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/3.jpg')}}" alt="" />
                                     </a>
                                     <div class="product-action">
                                         <div class="pro-rating">
@@ -1475,7 +1475,7 @@ bunk bed </a></li>
                             <!--single-testimonial-start-->
                             <div class="single-testimonial">
                                 <div class="testimonial-img">
-                                    <p><img src="{{ asset('bundles/syliusweb/img/testimonial/tes-auth.jpg') }}" alt=""></p>
+                                    <p><img src="{{ asset('chamo/img/testimonial/tes-auth.jpg') }}" alt=""></p>
                                 </div>
                                 <div class="testimonial-des">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui odio, <br> Lorem ipsum Mattis dui odio, non suscipit , Lorem... </p>
@@ -1488,7 +1488,7 @@ bunk bed </a></li>
                             <!--single-testimonial-start-->
                             <div class="single-testimonial">
                                 <div class="testimonial-img">
-                                    <p><img src="{{ asset('bundles/syliusweb/img/testimonial/tes-auth.jpg') }}" alt=""></p>
+                                    <p><img src="{{ asset('chamo/img/testimonial/tes-auth.jpg') }}" alt=""></p>
                                 </div>
                                 <div class="testimonial-des">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui odio, <br> Lorem ipsum Mattis dui odio, non suscipit , Lorem... </p>
@@ -1522,7 +1522,7 @@ bunk bed </a></li>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="single-blog">
                                 <div class="blog-img">
-                                    <a href="#"><img src="{{ asset('bundles/syliusweb/img/blog/blog-1.jpg') }}" alt=""></a>
+                                    <a href="#"><img src="{{ asset('chamo/img/blog/blog-1.jpg') }}" alt=""></a>
                                     <div class="blog-time">
                                         <span class="date">23</span><br>
                                         <span class="month">Jan</span>
@@ -1554,7 +1554,7 @@ bunk bed </a></li>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="single-blog">
                                 <div class="blog-img">
-                                    <a href="#"><img src="{{ asset('bundles/syliusweb/img/blog/blog-2.jpg') }}" alt=""></a>
+                                    <a href="#"><img src="{{ asset('chamo/img/blog/blog-2.jpg') }}" alt=""></a>
                                     <div class="blog-time">
                                         <span class="date">23</span><br>
                                         <span class="month">Jan</span>
@@ -1586,7 +1586,7 @@ bunk bed </a></li>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="single-blog">
                                 <div class="blog-img">
-                                    <a href="#"><img src="{{ asset('bundles/syliusweb/img/blog/blog-3.jpg') }}" alt=""></a>
+                                    <a href="#"><img src="{{ asset('chamo/img/blog/blog-3.jpg') }}" alt=""></a>
                                     <div class="blog-time">
                                         <span class="date">23</span><br>
                                         <span class="month">Jan</span>
@@ -1619,7 +1619,7 @@ bunk bed </a></li>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="single-blog">
                                 <div class="blog-img">
-                                    <a href="#"><img src="{{ asset('bundles/syliusweb/img/blog/blog-1.jpg') }}" alt=""></a>
+                                    <a href="#"><img src="{{ asset('chamo/img/blog/blog-1.jpg') }}" alt=""></a>
                                     <div class="blog-time">
                                         <span class="date">23</span><br>
                                         <span class="month">Jan</span>
@@ -1705,37 +1705,37 @@ bunk bed </a></li>
                         <div class="brand-carousel">
                             <!--single-testimonial-start-->
                             <div class="single-brand">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/brand/brand1.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/brand/brand1.png') }}" alt=""></a>
                             </div>
                             <!--single-testimonial-end-->
                             <!--single-testimonial-start-->
                             <div class="single-brand">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/brand/brand2.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/brand/brand2.png') }}" alt=""></a>
                             </div>
                             <!--single-testimonial-end-->
                             <!--single-testimonial-start-->
                             <div class="single-brand">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/brand/brand3.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/brand/brand3.png') }}" alt=""></a>
                             </div>
                             <!--single-testimonial-end-->
                             <!--single-testimonial-start-->
                             <div class="single-brand">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/brand/brand4.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/brand/brand4.png') }}" alt=""></a>
                             </div>
                             <!--single-testimonial-end-->
                             <!--single-testimonial-start-->
                             <div class="single-brand">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/brand/brand3.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/brand/brand3.png') }}" alt=""></a>
                             </div>
                             <!--single-testimonial-end-->
                             <!--single-testimonial-start-->
                             <div class="single-brand">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/brand/brand2.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/brand/brand2.png') }}" alt=""></a>
                             </div>
                             <!--single-testimonial-end-->
                             <!--single-testimonial-start-->
                             <div class="single-brand">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/brand/brand4.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/brand/brand4.png') }}" alt=""></a>
                             </div>
                             <!--single-testimonial-end-->
                         </div>
@@ -1751,7 +1751,7 @@ bunk bed </a></li>
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="{{ asset('bundles/syliusweb/img/logo/logo.gif') }}" alt=""></a>
+                                <a href="index.html"><img src="{{ asset('chamo/img/logo/logo.gif') }}" alt=""></a>
                             </div>
                             <!--footer-text-start-->
                             <div class="footer-top-content">
@@ -1868,7 +1868,7 @@ bunk bed </a></li>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="payment-area">
-                                <a href="#"><img src="{{ asset('bundles/syliusweb/img/pay/pay.png') }}" alt=""></a>
+                                <a href="#"><img src="{{ asset('chamo/img/pay/pay.png') }}" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -1891,7 +1891,7 @@ bunk bed </a></li>
                                 <!-- product-images -->
                                 <div class="product-images">
                                     <div class="main-image images">
-                                        <img alt="" src="{{ asset('bundles/syliusweb/img/product/8.jpg') }}">
+                                        <img alt="" src="{{ asset('chamo/img/product/8.jpg') }}">
                                     </div>
                                 </div>
                                 <!-- product-images -->
@@ -1947,21 +1947,21 @@ bunk bed </a></li>
     {# javascripts... #}
     {% block javascripts %}
         {% javascripts output='assets/compiled/frontend.js'
-        'bundles/syliusweb/js/vendor/modernizr-2.8.3.min.js'
-        'bundles/syliusweb/js/vendor/jquery-1.12.0.min.js'
-        'bundles/syliusweb/js/bootstrap.min.js'
-        'bundles/syliusweb/js/owl.carousel.min.js'
-        'bundles/syliusweb/js/jquery.meanmenu.js'
+        'chamo/js/vendor/modernizr-2.8.3.min.js'
+        'chamo/js/vendor/jquery-1.12.0.min.js'
+        'chamo/js/bootstrap.min.js'
+        'chamo/js/owl.carousel.min.js'
+        'chamo/js/jquery.meanmenu.js'
         'lib/js/jquery.nivo.slider.js'
-        'bundles/syliusweb/js/jquery-ui.min.js'
-        'bundles/syliusweb/js/jquery.scrollUp.min.js'
-        'bundles/syliusweb/js/jquery.bxslider.min.js'
-        'bundles/syliusweb/js/jquery.elevateZoom-3.0.8.min.js'
-        'bundles/syliusweb/js//jquery.countdown.min.js'
-        'bundles/syliusweb/js/wow.min.js'
-        'bundles/syliusweb/js/plugins.js'
+        'chamo/js/jquery-ui.min.js'
+        'chamo/js/jquery.scrollUp.min.js'
+        'chamo/js/jquery.bxslider.min.js'
+        'chamo/js/jquery.elevateZoom-3.0.8.min.js'
+        'chamo/js//jquery.countdown.min.js'
+        'chamo/js/wow.min.js'
+        'chamo/js/plugins.js'
         'lib/home.js'
-        'bundles/syliusweb/js/main.js'
+        'chamo/js/main.js'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
