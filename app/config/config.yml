@@ -4,6 +4,7 @@ imports:
     - { resource: migrations.yml }
     - { resource: @SyliusCoreBundle/Resources/config/app/main.yml }
     - { resource: @SyliusAdminBundle/Resources/config/app/main.yml }
+    - { resource: @AppBundle/Resources/config/config.yml }
 
 framework:
     translator:      { fallback: %locale% }

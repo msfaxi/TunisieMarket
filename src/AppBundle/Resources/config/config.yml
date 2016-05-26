@@ -1,0 +1,2 @@
+parameters:
+    sylius.controller.frontend.homepage.class: AppBundle\Controller\FrontEnd\HomepageController

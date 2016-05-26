@@ -2,252 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba58a532-66de-488b-980f-7d2e80d2a5d7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/backend.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/blueimp-gallery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/datepicker3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/frontend.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/jquery.bxslider.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/meanmenu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/select2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/about/about-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/about/icon-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/about/icon-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/about/person1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/about/person2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/about/person3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/banner-9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/fullwide-banner-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/fullwide-banner-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/fullwide-banner-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/fullwide-banner-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/banner/fullwide-banner-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/blog/blog-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/blog/blog-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/blog/blog-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/blog/blog-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/blog/blog-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/blog/blog-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/blog/blog-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/brand/brand-bg-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/brand/brand-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/brand/brand1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/brand/brand2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/brand/brand3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/brand/brand4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/cart/cart-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/cart/cart-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/cart/h-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/cart/h-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/cart/s-cart1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/cart/s-cart2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/cart/topcart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/contact/bkg_contact.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/contact/contact_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/contact/map-marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/icon/64/amazon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/icon/64/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/icon/64/google.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/icon/acc-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/icon/acc-2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/icon/btn_edit.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/logo/h-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/logo/logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/logo/social.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/menu-img/img_menu.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/pay/pay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/42.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-5/44.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/h-6/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/wish/w-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/product/wish/w-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/shop/S-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/shop/shop-ba.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/sliders/S-9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/swan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/testimonial/car-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/testimonial/tes-auth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/testimonial/tes-bg-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/testimonial/tes-bg-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/testimonial/test-athu-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/big-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/big-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/big-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/big-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/big-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/big-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/big-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/thum/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/thum/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/thum/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/thum/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/thum/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/thum/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/thum/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/zoom-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/zoom-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/zoom-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/zoom-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/zoom-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/zoom-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/img/zoom-img/zoom-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/backend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/confirm-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/dynamic-property-types.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/form-collection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/form-spinner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/form-upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/frontend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/jquery.blueimp-gallery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/jquery.bxslider.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/jquery.countdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/jquery.elevateZoom-3.0.8.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/jquery.meanmenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/jquery.scrollUp.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/province-choices.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/select2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/sylius-attribute-choices.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/vendor/jquery-1.12.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/vendor/modernizr-2.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/public/js/wow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/translations/messages.en.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/translations/messages.fr.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Backend/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Homepage/main.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html_v0.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/menu.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/confirm-modal.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/gallery.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/menu.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/home/majdi.sfaxi/www/TunisieMarket/web/bundles/syliusweb/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/home/majdi.sfaxi/www/TunisieMarket/web/fonts/FontAwesome.otf" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/web/chamo/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/FontAwesome_FontAwesome_1.otf" afterPath="$PROJECT_DIR$/web/chamo/fonts/FontAwesome_FontAwesome_1.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont_fontawesome-webfont_1.eot" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont_fontawesome-webfont_1.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont_fontawesome-webfont_1.svg" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont_fontawesome-webfont_1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont_fontawesome-webfont_1.ttf" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont_fontawesome-webfont_1.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/fontawesome-webfont_fontawesome-webfont_1.woff" afterPath="$PROJECT_DIR$/web/chamo/fonts/fontawesome-webfont_fontawesome-webfont_1.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="$PROJECT_DIR$/web/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/img/arrows-2.png" afterPath="$PROJECT_DIR$/web/lib/img/arrows-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/img/arrows.png" afterPath="$PROJECT_DIR$/web/lib/img/arrows.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/img/bullets-2.png" afterPath="$PROJECT_DIR$/web/lib/img/bullets-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/img/bullets.png" afterPath="$PROJECT_DIR$/web/lib/img/bullets.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/img/loading-2.gif" afterPath="$PROJECT_DIR$/web/lib/img/loading-2.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/img/loading.gif" afterPath="$PROJECT_DIR$/web/lib/img/loading.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_test.php" afterPath="$PROJECT_DIR$/web/app_test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/css/nivo-slider.css" afterPath="$PROJECT_DIR$/web/lib/css/nivo-slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/css/preview.css" afterPath="$PROJECT_DIR$/web/lib/css/preview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/home.js" afterPath="$PROJECT_DIR$/web/lib/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lib/js/jquery.nivo.slider.js" afterPath="$PROJECT_DIR$/web/lib/js/jquery.nivo.slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Homepage/main.html.twig" afterPath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Homepage/main.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/menu.html.twig" afterPath="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/menu.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
     </list>
     <ignored path="TunisieMarket.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -269,11 +28,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html.twig">
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="102" column="133" selection-start-line="102" selection-start-column="130" selection-end-line="102" selection-end-column="133" />
+            <state relative-caret-position="591">
+              <caret line="146" column="53" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html_v1.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/show.html_v1.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="339" column="30" selection-start-line="339" selection-start-column="24" selection-end-line="339" selection-end-column="30" />
+              <folding>
+                <element signature="e#4474#5135#0#Twig" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_single.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/_single.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-792">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_singleBox.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/_singleBox.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -307,11 +108,27 @@
         <option value="$PROJECT_DIR$/vendor/knplabs/knp-menu/tests/Knp/Menu/Tests/Renderer/TwigRendererTest.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Menu/FrontendMenuBuilder.php" />
         <option value="$PROJECT_DIR$/web/assets/compiled/frontend.css" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/src/AppBundle/AppBundle.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/HomepageController.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/config.yml" />
+        <option value="$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Channel/Repository/ChannelRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php" />
+        <option value="$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/menu.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/HomepageController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html_v1.twig" />
+        <option value="$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Homepage/main.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Homepage/main.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/show.html_v1.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/show.html_v0.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/show.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/_single.html.twig" />
       </list>
     </option>
   </component>
@@ -384,7 +201,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,25 +215,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chamo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisieMarket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemId" value="sylius" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="sylius" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,21 +237,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
+              <option name="myItemId" value="sylius" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TunisieMarket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemId" value="sylius" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -452,11 +253,271 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
+              <option name="myItemId" value="Sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Product" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunisieMarket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sylius" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,6 +612,18 @@
               <option name="myItemId" value="SyliusWebBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Product" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -566,7 +639,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SyliusWebBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -577,23 +654,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/app/config/config.yml&#10;font-awesome.min.css&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/web/bundles/syliusweb/css/font-awesome.min.css&#10;style.css&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/web/bundles/syliusweb/css/style.css&#10;_item.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Cart/_item.html.twig&#10;summary.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Cart/summary.html.twig&#10;knpMenu&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;MenuBuilder&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php&#10;MenuItem&#9;null&#9;null&#10;knp&#9;null&#9;null&#10;knp_menu.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;menu.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Backend/menu.html.twig&#10;conveyorType&#9;null&#9;null&#10;logo.png&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/public/img/logo.png" />
+    <property name="SearchEverywhereHistoryKey" value="loaddata&#9;null&#9;null&#10;load&#9;null&#9;null&#10;MenuIt&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/knplabs/knp-menu/src/Knp/Menu/MenuItem.php&#10;knp_menu.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;menu&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php&#10;Knpmenu&#9;null&#9;null&#10;Knp\Menu\MenuItem&#9;null&#9;null&#10;menu.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/app/Resources/SyliusWebBundle/views/menu.html.twig&#10;filter_form.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/SearchBundle/Resources/views/filter_form.html.twig&#10;font-awesome.min.css&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/web/bundles/syliusweb/css/font-awesome.min.css&#10;style.css&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/web/bundles/syliusweb/css/style.css&#10;_item.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Cart/_item.html.twig&#10;summary.html.twig&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Cart/summary.html.twig&#10;knpMenu&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;MenuBuilder&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php&#10;MenuItem&#9;null&#9;null&#10;knp&#9;null&#9;null&#10;conveyorType&#9;null&#9;null&#10;logo.png&#9;FILE&#9;file:///home/majdi.sfaxi/www/TunisieMarket/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/public/img/logo.png" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../brandalley.v6" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product" />
+      <recent name="$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend" />
       <recent name="$PROJECT_DIR$/web/chamo/img" />
       <recent name="$PROJECT_DIR$/web/chamo" />
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/img/chamo" />
-      <recent name="$PROJECT_DIR$/web/js/chamo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd" />
+      <recent name="$PROJECT_DIR$/src/AppBundle/Controller" />
       <recent name="$PROJECT_DIR$/web/chamo" />
       <recent name="$PROJECT_DIR$/app/Resources" />
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/bundles/syliusweb" />
     </key>
   </component>
   <component name="RunManager">
@@ -643,24 +721,26 @@
       <updated>1463493297597</updated>
       <workItem from="1463493298918" duration="11940000" />
       <workItem from="1463581619319" duration="43483000" />
-      <workItem from="1463998129654" duration="1472000" />
+      <workItem from="1463998129654" duration="47796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56895000" />
+    <option name="totallyTimeSpent" value="103219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="1204" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33489618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35082874" sideWeight="0.15137307" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3201107" sideWeight="0.2525117" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="165" y="96" width="1335" height="1004" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3201107" sideWeight="0.74748826" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35082874" sideWeight="0.8486269" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33302584" sideWeight="0.8365707" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -668,10 +748,29 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32841328" sideWeight="0.8238446" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3201107" sideWeight="0.2525117" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="165" y="96" width="1335" height="1004" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.351476" sideWeight="0.8365707" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3201107" sideWeight="0.74748826" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -685,326 +784,374 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/06935bc_font-awesome_3.css">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/PricingBundle/Form/EventListener/BuildPriceableFormSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Pricing/Calculator/StandardCalculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Pricing/Calculator/DelegatingCalculator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/06935bc_create-ui_2.css">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Pricing/Calculator/CalculatorInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/06935bc_createStyle_6.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/compiled/frontend_home_6.js" />
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/config/twig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/compiled/frontend_style_9.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/compiled/frontend_style_1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/syliusweb/lib/home.js" />
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Backend/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/menu.html.twig" />
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-menu-bundle/Knp/Bundle/MenuBundle/KnpMenuBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/menu.html.twig" />
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-menu/tests/Knp/Menu/Tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="106" column="76" selection-start-line="106" selection-start-column="68" selection-end-line="106" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-menu/src/Knp/Menu/MenuItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4993">
-          <caret line="717" column="15" selection-start-line="717" selection-start-column="15" selection-end-line="717" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-menu/tests/Knp/Menu/Tests/Renderer/TwigRendererTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Menu/FrontendMenuBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <element signature="e#34#85#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CoreBundle/Kernel/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CartBundle/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-857">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CartBundle/Resources/config/services.xml">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Product/Model/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="40" />
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CartBundle/Templating/Helper/CartHelper.php">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Resource/Model/TimestampableInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Resource/Model/ToggleableInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Product/Model/ProductTranslationInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-215">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Association/Model/AssociableInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/public/css/backend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="517" column="24" selection-start-line="517" selection-start-column="24" selection-end-line="517" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Product/Model/ProductInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Resource/Model/TranslatableInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Resource/Model/SlugAwareInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Archetype/Model/ArchetypeSubjectInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Backend/Product/macros.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="36" column="126" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony-cmf/media-bundle/Form/Type/FileType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony-cmf/media-bundle/Form/Type/ImageType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/media/image/f2/a2/c76b52d88e98b7661cffcc269f59.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/media/image/9c/46/cba553e5b7366098e6e99cc267eb.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Account/Address/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CartBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CartBundle/Resources/config/twig.xml">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Account/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html_v0.twig" />
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CartBundle/Controller/CartController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Review/_list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="133" column="27" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Cart/Model/Cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-515">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Cart/Model/CartItem.php">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="114" column="32" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Backend/ProductArchetype/build.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Homepage/main.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Component/Order/Model/OrderItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4598">
-          <caret line="413" column="51" selection-start-line="413" selection-start-column="23" selection-end-line="413" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Cart/_item.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Cart/summary.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/syliusweb/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/web/assets/compiled/frontend.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37429">
-          <caret line="224" column="2" selection-start-line="224" selection-start-column="2" selection-end-line="224" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/06935bc.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="1159" column="195" selection-start-line="1159" selection-start-column="195" selection-end-line="1159" selection-end-column="195" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/lib/img/arrows-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/lib/img/arrows.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/lib/css/nivo-slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="173" column="13" selection-start-line="173" selection-start-column="10" selection-end-line="173" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/lib/js/jquery.nivo.slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="242" column="21" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/lib/css/preview.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/syliusweb/css/font-awesome.min.css" />
-    <entry file="file://$PROJECT_DIR$/web/bundles/cmfcreate/vendor/create/examples/font-awesome/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Command/AssetsInstallCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2421">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/js/jquery-ui.min.js">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/StaticContent/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="51" column="21" selection-start-line="19" selection-start-column="4" selection-end-line="51" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html_v0.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="-485">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Backend/Dashboard/main.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/HomepageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="22" column="63" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Homepage/main.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="102" column="133" selection-start-line="102" selection-start-column="130" selection-end-line="102" selection-end-column="133" />
+        <state relative-caret-position="1008">
+          <caret line="497" column="30" selection-start-line="497" selection-start-column="30" selection-end-line="497" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/zoom-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/zoom-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/zoom-4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/zoom-6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/zoom-7.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/big-7.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/big-6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/big-5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/big-4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/big-3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/big-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/big-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chamo/img/zoom-img/zoom-5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/_attribute.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/_singleBox.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/WebBundle/Resources/views/Frontend/Product/_single.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="146" column="53" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SyliusWebBundle/views/Frontend/Product/show.html_v1.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="339" column="30" selection-start-line="339" selection-start-column="24" selection-end-line="339" selection-end-column="30" />
+          <folding>
+            <element signature="e#4474#5135#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

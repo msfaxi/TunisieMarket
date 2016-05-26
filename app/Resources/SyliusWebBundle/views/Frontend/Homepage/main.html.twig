@@ -1,27 +1,995 @@
 {% extends 'SyliusWebBundle:Frontend:layout.html.twig' %}
 
-{% block slideshow_full %}
-    <div class="row">
-        {{ sonata_block_render({'name': '/cms/blocks/slideshow-full'}) }}
-    </div>
-{% endblock %}
-
-{% block slideshow_sidebar %}
-    <div class="row">
-        {{ sonata_block_render({'name': '/cms/blocks/slideshow-sidebar'}) }}
-    </div>
-{% endblock %}
-
-
 {% block content %}
-
-<div class="jumbotron">
-    <h1>{{ 'sylius.homepage.splash.headline'|trans }}</h1>
-    <p class="lead">{{ 'sylius.homepage.splash.subheadline'|trans }}</p>
-</div>
-
-{{ sonata_block_render({'name': '/cms/blocks/slideshow-home'}) }}
-
-{{ render(url('sylius_partial_product_latest', {'limit': 9, 'template': 'SyliusWebBundle:Frontend/Product:latest.html.twig'})) }}
-
+    <!-- banner-area start -->
+    <div class="banner-area home-6">
+        <div class="container">
+            <div class="row">
+                <!-- single-banner start -->
+                    {% for taxon in taxons %}
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="single-banner home-3 home-6">
+                                <a href="{{ url(taxon.getPermalink()) }}"><span><img src="{{ asset('media/image/' ~ taxon.getPath()) }}" alt="" /></span></a>
+                                <p class="banner-text">{{ taxon.getName() }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- banner-area end -->
+    <!--featured-product-area-start-->
+    <section class="blog-area">
+        <div class="container">
+            <!--featured-product-area-heading-start-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-heading blog-margin home-6">
+                        <h3>Featured Products</h3>
+                    </div>
+                </div>
+            </div>
+            <!--featured-product-area-heading-end-->
+            <div class="row">
+                <div class="featured-product-carousel single-indicator">
+                    <!-- single-product-start -->
+                        {% for newProduct in newProducts %}
+                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                                <div class="single-product">
+                                    <div class="product-img">
+                                        <a href="{{ path(newProduct) }}" class="pull-left"
+                                           title="{{ 'sylius.ui.view_product_details'|trans({'%product%': newProduct.name})|escape('html_attr') }}">
+                                            <img src="{{ newProduct.image ? newProduct.image.path|imagine_filter('sylius_large') : 'http://placehold.it/50x40' }}" alt="" class="primary-img" />
+                                        </a>
+                                        <div class="product-action">
+                                            <div class="pro-rating">
+                                                <ul>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="action-link">
+                                                <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                                <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                                <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <h2><a href="{{ path(newProduct) }}" >{{ newProduct.name }}</a></h2>
+                                        <div class="pro-price">
+                                            <p class="normal-price"> {{ newProduct.masterVariant.price|sylius_price }}</p>
+                                        </div>
+                                        <div class="product-cart">
+                                            <button class="button">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    <!-- single-product-end -->
+                </div>
+            </div>
+    </section>
+    <!--featured-product-area-end-->
+    <!--New-Products-area-start-->
+    <section class="blog-area">
+        <div class="container">
+            <!--featured-product-area-heading-start-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-heading blog-margin home-6 mainus-m">
+                        <h3>New Products</h3>
+                    </div>
+                </div>
+            </div>
+            <!--featured-product-area-heading-end-->
+            <div class="row">
+                <div class="featured-product-carousel single-indicator">
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/9.jpg') }}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Gravida et mattis</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£333.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/8.jpg') }}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Accumsan elit</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£233.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/7.jpg') }}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Suspendisse</a></h2>
+                                <div class="pro-price">
+                                    <span class="normal-price">£333.00</span>
+                                    <span class="old-price"><del>£433.00</del></span>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/6.jpg') }}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Taciti sociosqu</a></h2>
+                                <div class="pro-price">
+                                    <span class="normal-price">£450.00</span>
+                                    <span class="old-price"><del>£500.00</del></span>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/4.jpg') }}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Malesuada</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£333.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/3.jpg') }}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Aenean eleifend</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£500.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/2.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Aliquet urna</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£550.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/1.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Himenaeos</a></h2>
+                                <div class="pro-price">
+                                    <span class="normal-price">£450.00</span>
+                                    <span class="old-price"><del>£450.00</del></span>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--New-Products-area-end-->
+    <!-- banner-area start -->
+    <div class="banner-area home-6 second">
+        <div class="container">
+            <div class="row">
+                <!-- single-banner start -->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single-banner home-3">
+                        <a href="#"><span><img src="{{ asset('chamo/img/banner/banner-19.jpg') }}" alt="" /></span></a>
+                    </div>
+                </div>
+                <!-- single-banner end -->
+                <!-- single-banner start -->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single-banner home-3">
+                        <a class="last-banner" href="#"><span><img src="{{ asset('chamo/img/banner/banner-20.jpg') }}" alt="" /></span></a>
+                    </div>
+                </div>
+                <!-- single-banner end -->
+            </div>
+        </div>
+    </div>
+    <!-- banner-area end -->
+    <!--Sale-Products-area-start-->
+    <section class="blog-area">
+        <div class="container">
+            <!--featured-product-area-heading-start-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-heading blog-margin home-6">
+                        <h3>Sale Products</h3>
+                    </div>
+                </div>
+            </div>
+            <!--featured-product-area-heading-end-->
+            <div class="row">
+                <div class="featured-product-carousel single-indicator">
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/2.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Aliquet urna</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£333.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/9.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Gravida et mattis</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£333.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/6.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Accumsan elit</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£333.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/3.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Aenean eleifend</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£500.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/5.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Aliquet urna</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£333.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/7.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Taciti sociosqua</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£433.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/4.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Accumsan elit</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£533.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                    <!-- single-product-start -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a class="a-img" href="#"><img class="primary-img" src="{{ asset('chamo/img/product/h-6/3.jpg')}}" alt="" />
+                                </a>
+                                <div class="product-action">
+                                    <div class="pro-rating">
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="action-link">
+                                        <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i>
+                                        </a>
+                                        <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                                        <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h2><a href="#">Aenean eleifend</a></h2>
+                                <div class="pro-price">
+                                    <p class="normal-price">£333.00</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button class="button">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-product-end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sale-Products-area-end-->
+    <!--latest-testimonials-start-->
+    <div class="latest-testimonials-area home-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="testimonial-carousel home-6">
+                        <!--single-testimonial-start-->
+                        <div class="single-testimonial">
+                            <div class="testimonial-img">
+                                <p><img src="{{ asset('chamo/img/testimonial/tes-auth.jpg') }}" alt=""></p>
+                            </div>
+                            <div class="testimonial-des">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui odio, <br> Lorem ipsum Mattis dui odio, non suscipit , Lorem... </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Miss.Anna</h5>
+                            </div>
+                        </div>
+                        <!--single-testimonial-end-->
+                        <!--single-testimonial-start-->
+                        <div class="single-testimonial">
+                            <div class="testimonial-img">
+                                <p><img src="{{ asset('chamo/img/testimonial/tes-auth.jpg') }}" alt=""></p>
+                            </div>
+                            <div class="testimonial-des">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui odio, <br> Lorem ipsum Mattis dui odio, non suscipit , Lorem... </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Miss.Anna</h5>
+                            </div>
+                        </div>
+                        <!--single-testimonial-end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--latest-testimonials-end-->
+    <!--blog-area-start-->
+    <section class="blog-area">
+        <div class="container">
+            <!--blog-area-heading-start-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-heading  blog-margin home-6">
+                        <h3>from the blog</h3>
+                    </div>
+                </div>
+            </div>
+            <!--blog-area-heading-end-->
+            <div class="row">
+                <div class="blog-carousel single-indicator">
+                    <!--single-blog-area-start-->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="#"><img src="{{ asset('chamo/img/blog/blog-1.jpg') }}" alt=""></a>
+                                <div class="blog-time">
+                                    <span class="date">23</span><br>
+                                    <span class="month">Jan</span>
+                                </div>
+                            </div>
+                            <div class="blog-inner-content">
+                                <div class="author-time">
+                                    <span class="aut-date">23</span>
+                                    <span class="aut-manth">Jan</span>
+                                    <span class="aut-year">2016</span>
+                                    <span class="aut-separator">/</span>
+                                    <span class="aut-name">BootExperts</span>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#"><h4>Lorem Ipsum is not simply random. </h4></a>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+                                </div>
+                                <div class="blog-comment">
+                                    <div class="comments">
+                                        <span class="count">0</span>
+                                        <span class="count-tex">comments</span>
+                                    </div>
+                                    <a class="blog-readmore" href="#">read more <span><i class="fa fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--single-blog-area-end-->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="#"><img src="{{ asset('chamo/img/blog/blog-2.jpg') }}" alt=""></a>
+                                <div class="blog-time">
+                                    <span class="date">23</span><br>
+                                    <span class="month">Jan</span>
+                                </div>
+                            </div>
+                            <div class="blog-inner-content">
+                                <div class="author-time">
+                                    <span class="aut-date">23</span>
+                                    <span class="aut-manth">Jan</span>
+                                    <span class="aut-year">2016</span>
+                                    <span class="aut-separator">/</span>
+                                    <span class="aut-name">BootExperts</span>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#"><h4>Lorem Ipsum is not simply random. </h4></a>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+                                </div>
+                                <div class="blog-comment">
+                                    <div class="comments">
+                                        <span class="count">0</span>
+                                        <span class="count-tex">comments</span>
+                                    </div>
+                                    <a class="blog-readmore" href="#">read more <span><i class="fa fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--single-blog-area-end-->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="#"><img src="{{ asset('chamo/img/blog/blog-3.jpg') }}" alt=""></a>
+                                <div class="blog-time">
+                                    <span class="date">23</span><br>
+                                    <span class="month">Jan</span>
+                                </div>
+                            </div>
+                            <div class="blog-inner-content">
+                                <div class="author-time">
+                                    <span class="aut-date">23</span>
+                                    <span class="aut-manth">Jan</span>
+                                    <span class="aut-year">2016</span>
+                                    <span class="aut-separator">/</span>
+                                    <span class="aut-name">BootExperts</span>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#"><h4>Lorem Ipsum is not simply random. </h4></a>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+                                </div>
+                                <div class="blog-comment">
+                                    <div class="comments">
+                                        <span class="count">0</span>
+                                        <span class="count-tex">comments</span>
+                                    </div>
+                                    <a class="blog-readmore" href="#">read more <span><i class="fa fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--single-blog-area-end-->
+                    <!--single-blog-area-end-->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="#"><img src="{{ asset('chamo/img/blog/blog-1.jpg') }}" alt=""></a>
+                                <div class="blog-time">
+                                    <span class="date">23</span><br>
+                                    <span class="month">Jan</span>
+                                </div>
+                            </div>
+                            <div class="blog-inner-content">
+                                <div class="author-time">
+                                    <span class="aut-date">23</span>
+                                    <span class="aut-manth">Jan</span>
+                                    <span class="aut-year">2016</span>
+                                    <span class="aut-separator">/</span>
+                                    <span class="aut-name">BootExperts</span>
+                                </div>
+                                <div class="blog-title">
+                                    <a href="#"><h4>Lorem Ipsum is not simply random. </h4></a>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+                                </div>
+                                <div class="blog-comment">
+                                    <div class="comments">
+                                        <span class="count">0</span>
+                                        <span class="count-tex">comments</span>
+                                    </div>
+                                    <a class="blog-readmore" href="#">read more <span><i class="fa fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--single-blog-area-end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--blog-area-end-->
+    <!--corporate-service-area-start-->
+    <section class="corporate-service-area home-1 home-6">
+        <div class="container">
+            <div class="row">
+                <!--single-service-start-->
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="single-corporate free-ship cor-mar-bott">
+                        <div class="service-name">
+                            <h3>free shipping</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--single-service-end-->
+                <!--single-service-start-->
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="single-corporate onl-support cor-mar-bott">
+                        <div class="service-name">
+                            <h3>online support</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--single-service-end-->
+                <!--single-service-start-->
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="single-corporate refunds cor-mar-bott">
+                        <div class="service-name">
+                            <h3>Refunds in 72 hours</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--single-service-end-->
+                <!--single-service-start-->
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="single-corporate many-treat last">
+                        <div class="service-name">
+                            <h3>Many treats & deals</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--single-service-end-->
+            </div>
+        </div>
+    </section>
+    <!--corporate-service-area-end-->
+    <!--brand-area-start-->
+    <div class="brand-area-home-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="brand-carousel">
+                        <!--single-testimonial-start-->
+                        <div class="single-brand">
+                            <a href="#"><img src="{{ asset('chamo/img/brand/brand1.png') }}" alt=""></a>
+                        </div>
+                        <!--single-testimonial-end-->
+                        <!--single-testimonial-start-->
+                        <div class="single-brand">
+                            <a href="#"><img src="{{ asset('chamo/img/brand/brand2.png') }}" alt=""></a>
+                        </div>
+                        <!--single-testimonial-end-->
+                        <!--single-testimonial-start-->
+                        <div class="single-brand">
+                            <a href="#"><img src="{{ asset('chamo/img/brand/brand3.png') }}" alt=""></a>
+                        </div>
+                        <!--single-testimonial-end-->
+                        <!--single-testimonial-start-->
+                        <div class="single-brand">
+                            <a href="#"><img src="{{ asset('chamo/img/brand/brand4.png') }}" alt=""></a>
+                        </div>
+                        <!--single-testimonial-end-->
+                        <!--single-testimonial-start-->
+                        <div class="single-brand">
+                            <a href="#"><img src="{{ asset('chamo/img/brand/brand3.png') }}" alt=""></a>
+                        </div>
+                        <!--single-testimonial-end-->
+                        <!--single-testimonial-start-->
+                        <div class="single-brand">
+                            <a href="#"><img src="{{ asset('chamo/img/brand/brand2.png') }}" alt=""></a>
+                        </div>
+                        <!--single-testimonial-end-->
+                        <!--single-testimonial-start-->
+                        <div class="single-brand">
+                            <a href="#"><img src="{{ asset('chamo/img/brand/brand4.png') }}" alt=""></a>
+                        </div>
+                        <!--single-testimonial-end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--brand-area-end-->
 {% endblock %}
