@@ -54,130 +54,273 @@
         <![endif]-->
         <!-- Add your site or application content here -->
         <!--header-area-start-->
-    {% block header %}
-        <header>
-             <!-- slider start-->
-            <div class="slider-area">
-                <div class="bend niceties preview-1">
-                    <div id="ensign-nivoslider" class="slides">	
-                        <img src="{{ asset('chamo/img/sliders/S-11.jpg') }}" alt="" title="#slider-direction-1"  />
-                        <img src="{{ asset('chamo/img/sliders/S-12.jpg') }}" alt="" title="#slider-direction-2"  />
-                    </div>
-                    <!-- direction 1 -->
-                    <div id="slider-direction-1" class="t-cn slider-direction slider-one">
-                    </div>
-                    <!-- direction 2 -->
-                    <div id="slider-direction-2" class="slider-direction slider-two">
-                    </div>
-                </div>
-            </div>
-            <!-- slider end-->
-            <div class="home-3-header-top">
-                <!--header-area-start-->
-                <div class="container">
-                    {% set cart = sylius_cart_get() %} 
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="header-right home-3">
-                                <!-- cart-total-start -->
-                                <div class="cart-total home-4">
-                                    <ul>
-                                        <li>
-                                            <a href="{{ path('sylius_cart_summary') }}">
-                                                <span class="cart-icon">
-                                                    <img src="{{ asset('chamo/img/cart/h-3.png') }}" alt="">
-                                                </span>
-                                                <span class="cart-number">
 
-                                                </span>
-                                            </a>
-                                            <div class="mini-cart-content home-6">
-                                                <div class="cart-img-details">
-                                                    <div class="cart-img-photo">
-                                                        <a href="#"><img src="{{ asset('chamo/img/cart/cart-1.jpg') }}" alt="" /></a>
-                                                    </div>
-                                                    <div class="cart-img-contaent">
-                                                        <a href="#"><h4>Aliquam consequat</h4></a>
-                                                        <span class="c-one">1</span>x
-                                                        <span class="c-price">£123.00</span> 
-                                                    </div>
-                                                    <div class="pro-del"><a href="#"><span class="edit"><img src="{{ asset('chamo/img/icon/btn_edit.gif') }}" alt=""></span> <i class="fa fa-trash"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                                <div class="cart-img-details border-up">	
-                                                    <div class="cart-img-photo">
-                                                        <a href="#"><img src="{{ asset('chamo/img/cart/cart-2.jpg') }}" alt="" /></a>
-                                                    </div>
-                                                    <div class="cart-img-contaent">
-                                                        <a href="#"><h4>Proin lectus ipsum</h4></a>
-                                                        <span class="c-one">1</span>x
-                                                        <span class="c-price">£88.00</span>
-                                                    </div>
-                                                    <div class="pro-del"><a href="#"><span class="edit"><img src="{{ asset('chamo/img/icon/btn_edit.gif') }}" alt=""></span> <i class="fa fa-trash"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-inner-bottom">
-                                                    <p class="total">Subtotal: <span class="amount">£211.00</span></p>
-                                                    <div class="clear"></div>
-                                                    <div class="cart-button">
-                                                        <span class="view-cart"><a href="#">view cart<i class="fa fa-angle-right"></i></a></span>
-                                                        <span class="c-check"><a href="#">Checkout<i class="fa fa-angle-right"></i></a></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- cart-total-end -->
-                                <!-- header-search-start -->
-                                <div class="header-search home-3">
-                                    <form action="#">
+        <header>
+            {% block header %}
+
+                <div class="home-3-header-top">
+                    <!--header-area-start-->
+                    <div class="container">
+                        {% set cart = sylius_cart_get() %}
+                        {% set cartItemsLength = cart.items|length %}
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-right home-3">
+                                    <!-- cart-total-start -->
+                                    <div class="cart-total home-4">
                                         <ul>
-                                            <li class="search-hover home-3">
-                                                <a class="icon" href="#"><i class="fa fa-search"></i></a>
-                                                <div class="search home-3">
-                                                    <input type="text" placeholder="Enter keywords to search...">
-                                                    <button>
-                                                        <i class="fa fa-search"></i>
-                                                    </button>
-                                                </div>
+                                            <li>
+                                                <a href="{{ path('sylius_cart_summary') }}">
+                                    <span class="cart-icon">
+                                        <img src="{{ asset('chamo/img/cart/h-3.png') }}" alt="">
+                                    </span>
+                                                    {% if  cartItemsLength > 0 %}
+                                                        <span class="cart-number">
+                                         {{ cartItemsLength }}
+                                    </span>
+                                                    {% endif %}
+                                                </a>
+                                                {% if cartItemsLength > 0 %}
+                                                    <div class="mini-cart-content home-6">
+                                                        {% for item in cart.items %}
+                                                            {% set product = item.product %}
+                                                            <div class="cart-img-details">
+                                                                <div class="cart-img-photo">
+                                                                    <a class="a-img" href="{{ path(product) }}"><img class="primary-img" src="{{ product.image ? product.image.path|imagine_filter('sylius_medium') : 'http://placehold.it/50x50' }}" alt="{{ product.name }}">
+                                                                </div>
+                                                                <div class="cart-img-contaent">
+                                                                    <a href="#"><h4>{{ product.name }}</h4></a>
+                                                                    <span class="c-one">{{ item.quantity }}</span>x
+                                                                    <span class="c-price">{{ product.masterVariant.price|sylius_price }}</span>
+                                                                </div>
+                                                                <div class="pro-del">
+                                                                    <a href="{{ path('sylius_cart_item_remove', {'id': product.id}) }}" ><i class="fa fa-trash"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        {% endfor %}
+                                                        <div class="cart-inner-bottom">
+                                                            {% set regularPrice = cart.itemsTotal %}
+                                                            <p class="total">Subtotal: <span class="amount">{{ regularPrice|sylius_price }}</span></p>
+                                                            <div class="clear"></div>
+                                                            <div class="cart-button">
+                                                                <span class="view-cart"><a href="{{ path('sylius_cart_summary') }}">view cart<i class="fa fa-angle-right"></i></a></span>
+                                                                <span class="c-check"><a href="{{ path('sylius_user_security_login') }}">Checkout<i class="fa fa-angle-right"></i></a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
                                             </li>
                                         </ul>
-                                    </form>
+                                    </div>
+                                    <!-- cart-total-end -->
+                                    <!-- header-search-start -->
+                                    <div class="header-search home-3">
+                                        <form action="#">
+                                            <ul>
+                                                <li class="search-hover home-3">
+                                                    <a class="icon" href="#"><i class="fa fa-search"></i></a>
+                                                    <div class="search home-3">
+                                                        <input type="text" placeholder="Enter keywords to search...">
+                                                        <button>
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <!-- header-search end -->
+                                    <!--header-link-area-start-->
+                                    <div class="header-link-area home-3 home-6">
+                                        {{ knp_menu_render('sylius.frontend.main', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
+                                        {{ knp_menu_render('sylius.frontend.locale', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
+                                        {{ knp_menu_render('sylius.frontend.currency', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
+                                    </div>
+                                    <!--header-link-area-end-->
                                 </div>
-                                <!-- header-search end -->
-                                <!--header-link-area-start-->
-                                <div class="header-link-area home-3 home-6">
-                                    {{ knp_menu_render('sylius.frontend.main', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
-                                    {{ knp_menu_render('sylius.frontend.locale', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
-                                    {{ knp_menu_render('sylius.frontend.currency', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
-                                </div>
-                                <!--header-link-area-end-->
                             </div>
                         </div>
                     </div>
+                    <!--header-top-end-->
                 </div>
-                <!--header-top-end-->
-            </div>
-            <div class="header-area home-3 home-6">
-                <div class="container">
-                    <div class="row">
-                        <!--header-logo-start-->
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="logo-img">
-                                <a href="{{ path('sylius_homepage') }}" title="{{ 'sylius.ui.sylius_logo'|trans }}"><img src="{{ asset('chamo/img/logo/h-3.png') }}" alt=""></a>
+                <div class="header-area home-3 home-6">
+                    <div class="container">
+                        <div class="row">
+                            <!--header-logo-start-->
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="logo-img">
+                                    <a href="{{ path('sylius_homepage') }}" title="{{ 'sylius.ui.sylius_logo'|trans }}"><img src="{{ asset('chamo/img/logo/h-3.png') }}" alt=""></a>
+                                </div>
                             </div>
+                            <!--header-logo-end-->
+                            <!--mainmenu-area-start-->
+                            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                <div class="top-menu-area home-3 hidden-sm hidden-xs">
+                                    <div class="mainmenu home-3 home-6 hidden-sm hidden-xs">
+                                        <nav>
+                                            <ul>
+                                                <li class="angle-down active"><a href="index.html">Home</a>
+                                                    <ul class="sub-menu sub-arrow">
+                                                        <li><a href="index-2.html">Home version-02</a></li>
+                                                        <li><a href="index-3.html">Home version-03</a></li>
+                                                        <li><a href="index-4.html">Home version-04</a></li>
+                                                        <li><a href="index-5.html">Home version-05</a></li>
+                                                        <li><a href="index-6.html">Home version-06</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="angle-down"><a href="shop.html">Bedroom</a>
+                                                    <div class="mega-menu mega-menu-full  mega-menu-level-1">
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li class=""><a href="shop.html">Beds</a></li>
+                                                                <li><a href="shop.html">Platform Beds</a></li>
+                                                                <li><a href="shop.html">Storage Beds</a></li>
+                                                                <li><a href="shop.html">Regular Beds</a></li>
+                                                                <li><a href="shop.html">Sleigh Beds</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Furniture</a></li>
+                                                                <li><a href="shop.html">Wood</a></li>
+                                                                <li><a href="shop.html">Sofa</a></li>
+                                                                <li><a href="shop.html">Mahogany</a></li>
+                                                                <li><a href="shop.html">Glass</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Nightstands</a></li>
+                                                                <li><a href="shop.html">Brown Finish</a></li>
+                                                                <li><a href="shop.html">Distressed</a></li>
+                                                                <li><a href="shop.html">Cherry Finish</a></li>
+                                                                <li><a href="shop.html">Weathered</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Headboards</a></li>                            <li><a href="shop.html">Upholstered</a></li>
+                                                                <li><a href="shop.html">Tufted</a></li>
+                                                                <li><a href="shop.html">Storage</a></li>
+                                                                <li><a href="shop.html">Padded</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="angle-down"><a href="shop.html">Living Room</a>
+                                                    <div class="mega-menu mega-menu-level-2">
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Living Chairs</a></li>
+                                                                <li><a href="shop.html">armchairs</a></li>
+                                                                <li><a href="shop.html">Living</a></li>
+                                                                <li><a href="shop.html">mattress</a></li>
+                                                                <li><a href="shop.html">bunk bed</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Living Tables</a></li>
+                                                                <li><a href="shop.html">bedspread</a></li>
+                                                                <li><a href="shop.html">chest</a></li>
+                                                                <li><a href="shop.html">trunk</a></li>
+                                                                <li><a href="shop.html">wardrobe</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Ottomans</a></li>
+                                                                <li><a href="shop.html">Bootees Bags</a></li>
+                                                                <li><a href="shop.html">shelf</a></li>
+                                                                <li><a href="shop.html">Jackets</a></li>
+                                                                <li><a href="shop.html">Shoes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">sink</a></li>
+                                                                <li><a href="shop.html">Shorts</a></li>
+                                                                <li><a href="shop.html">Dresses</a></li>
+                                                                <li><a href="shop.html">Trousers</a></li>
+                                                                <li><a href="shop.html">Skirts</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="angle-down"><a href="shop.html">Dining Room</a>                                           <div class="mega-menu mega-menu-level-3">
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Dining tables</a></li>
+                                                                <li><a href="shop.html">armchairs</a></li>
+                                                                <li><a href="shop.html">Living</a></li>
+                                                                <li><a href="shop.html">mattress</a></li>
+                                                                <li><a href="shop.html">bunk bed </a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Dining chairs</a></li>
+                                                                <li><a href="shop.html">hoodies</a></li>
+                                                                <li><a href="shop.html">Ankle</a></li>
+                                                                <li><a href="shop.html">SFootwear</a></li>
+                                                                <li><a href="shop.html">Wedges</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Dining sets</a></li>
+                                                                <li><a href="shop.html">Long Sleeve</a></li>
+                                                                <li><a href="shop.html">Short Sleeve</a></li>
+                                                                <li><a href="shop.html">Polo Short Sleeve</a></li>
+                                                                <li><a href="shop.html">Heeled sandals</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-column">
+                                                            <ul>
+                                                                <li><a href="shop.html">Dining storage</a></li>
+                                                                <li><a href="shop.html">Blazers</a></li>
+                                                                <li><a href="shop.html">Jackets</a></li>
+                                                                <li><a href="shop.html">Raincoats</a></li>
+                                                                <li><a href="shop.html">Trousers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="angle-down"><a href="shop.html">pages</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="blog.html">blog</a></li>
+                                                        <li><a href="shop.html">Office</a></li>
+                                                        <li><a href="blog-details.html">blog details</a></li>
+                                                        <li><a href="shop.html">shop page</a></li>
+                                                        <li><a href="shop-list.html">shop list</a></li>
+                                                        <li><a href="checkout.html">checkout</a></li>
+                                                        <li><a href="wishlist.html">wishlist</a></li>
+                                                        <li><a href="my-account.html">My account</a></li>
+                                                        <li><a href="about-us.html">about us</a></li>
+                                                        <li><a href="single-product.html">single product</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact-us.html">contact us</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--mainmenu-area-end-->
                         </div>
-                        <!--header-logo-end-->
-                        <!--mainmenu-area-start-->
-                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                            <div class="top-menu-area home-3 hidden-sm hidden-xs">
-                                <div class="mainmenu home-3 home-6 hidden-sm hidden-xs">
-                                    <nav>
+                    </div>
+                </div>
+                <!-- mobile-menu-area start -->
+                <div class="mobile-menu-area home-3 visible-sm visible-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 visible-sm visible-xs">
+                                <div class="mobile-menu">
+                                    <nav id="dropdown">
                                         <ul>
-                                            <li class="angle-down active"><a href="index.html">Home</a>
-                                                <ul class="sub-menu sub-arrow">
+                                            <li><a href="index.html">Home</a>
+                                                <ul>
                                                     <li><a href="index-2.html">Home version-02</a></li>
                                                     <li><a href="index-3.html">Home version-03</a></li>
                                                     <li><a href="index-4.html">Home version-04</a></li>
@@ -185,126 +328,117 @@
                                                     <li><a href="index-6.html">Home version-06</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="angle-down"><a href="shop.html">Bedroom</a>
-                                                <div class="mega-menu mega-menu-full  mega-menu-level-1">
-                                                    <div class="mega-menu-column">
+                                            <li><a href="#">Bedroom</a>
+                                                <ul>
+                                                    <li><a href="shop.html">Beds</a>
                                                         <ul>
-                                                            <li class=""><a href="shop.html">Beds</a></li>
                                                             <li><a href="shop.html">Platform Beds</a></li>
                                                             <li><a href="shop.html">Storage Beds</a></li>
                                                             <li><a href="shop.html">Regular Beds</a></li>
                                                             <li><a href="shop.html">Sleigh Beds</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="#">Furniture</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Furniture</a></li>
                                                             <li><a href="shop.html">Wood</a></li>
                                                             <li><a href="shop.html">Sofa</a></li>
                                                             <li><a href="shop.html">Mahogany</a></li>
                                                             <li><a href="shop.html">Glass</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="shop.html">Nightstands</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Nightstands</a></li>
                                                             <li><a href="shop.html">Brown Finish</a></li>
                                                             <li><a href="shop.html">Distressed</a></li>
                                                             <li><a href="shop.html">Cherry Finish</a></li>
                                                             <li><a href="shop.html">Weathered</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="shop.html">Headboards</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Headboards</a></li>                            <li><a href="shop.html">Upholstered</a></li>
+                                                            <li><a href="shop.html">Upholstered</a></li>
                                                             <li><a href="shop.html">Tufted</a></li>
                                                             <li><a href="shop.html">Storage</a></li>
                                                             <li><a href="shop.html">Padded</a></li>
                                                         </ul>
-                                                    </div>
-                                                </div>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li class="angle-down"><a href="shop.html">Living Room</a>
-                                                <div class="mega-menu mega-menu-level-2">
-                                                    <div class="mega-menu-column">
+                                            <li><a href="shop.html">Living Room</a>
+                                                <ul>
+                                                    <li><a href="shop.html">Living Chairs</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Living Chairs</a></li>
-                                                           <li><a href="shop.html">armchairs</a></li>
+                                                            <li><a href="shop.html">armchairs</a></li>
                                                             <li><a href="shop.html">Living</a></li>
                                                             <li><a href="shop.html">mattress</a></li>
                                                             <li><a href="shop.html">bunk bed</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="#">Living Tables</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Living Tables</a></li>
                                                             <li><a href="shop.html">bedspread</a></li>
                                                             <li><a href="shop.html">chest</a></li>
                                                             <li><a href="shop.html">trunk</a></li>
                                                             <li><a href="shop.html">wardrobe</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="#">Ottomans</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Ottomans</a></li>
                                                             <li><a href="shop.html">Bootees Bags</a></li>
                                                             <li><a href="shop.html">shelf</a></li>
                                                             <li><a href="shop.html">Jackets</a></li>
                                                             <li><a href="shop.html">Shoes</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="shop.html">sink</a>
                                                         <ul>
-                                                            <li><a href="shop.html">sink</a></li>
                                                             <li><a href="shop.html">Shorts</a></li>
                                                             <li><a href="shop.html">Dresses</a></li>
                                                             <li><a href="shop.html">Trousers</a></li>
                                                             <li><a href="shop.html">Skirts</a></li>
                                                         </ul>
-                                                    </div>
-                                                </div>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li class="angle-down"><a href="shop.html">Dining Room</a>                                           <div class="mega-menu mega-menu-level-3">
-                                                    <div class="mega-menu-column">
+                                            <li><a href="shop.html">Dining Room</a>
+                                                <ul>
+                                                    <li><a href="shop.html">Dining tables</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Dining tables</a></li>
                                                             <li><a href="shop.html">armchairs</a></li>
                                                             <li><a href="shop.html">Living</a></li>
                                                             <li><a href="shop.html">mattress</a></li>
                                                             <li><a href="shop.html">bunk bed </a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="shop.html">Dining chairs</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Dining chairs</a></li>
                                                             <li><a href="shop.html">hoodies</a></li>
                                                             <li><a href="shop.html">Ankle</a></li>
                                                             <li><a href="shop.html">SFootwear</a></li>
                                                             <li><a href="shop.html">Wedges</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="shop.html">Dining sets</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Dining sets</a></li>
                                                             <li><a href="shop.html">Long Sleeve</a></li>
                                                             <li><a href="shop.html">Short Sleeve</a></li>
                                                             <li><a href="shop.html">Polo Short Sleeve</a></li>
                                                             <li><a href="shop.html">Heeled sandals</a></li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="mega-menu-column">
+                                                    </li>
+                                                    <li><a href="shop.html">Dining storage</a>
                                                         <ul>
-                                                            <li><a href="shop.html">Dining storage</a></li>
+                                                            <li><a href="shop.html"></a></li>
                                                             <li><a href="shop.html">Blazers</a></li>
                                                             <li><a href="shop.html">Jackets</a></li>
                                                             <li><a href="shop.html">Raincoats</a></li>
                                                             <li><a href="shop.html">Trousers</a></li>
                                                         </ul>
-                                                    </div>
-                                                </div>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li class="angle-down"><a href="shop.html">pages</a>
-                                                <ul class="sub-menu">
+                                            <li><a href="shop.html">pages</a>
+                                                <ul>
                                                     <li><a href="blog.html">blog</a></li>
                                                     <li><a href="shop.html">Office</a></li>
                                                     <li><a href="blog-details.html">blog details</a></li>
@@ -317,169 +451,21 @@
                                                     <li><a href="single-product.html">single product</a></li>
                                                 </ul>
                                             </li>
+                                            <li><a href="shop.html">Office</a></li>
                                             <li><a href="contact-us.html">contact us</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                         </div>
-                        <!--mainmenu-area-end-->
                     </div>
                 </div>
-            </div>
-            <!-- mobile-menu-area start -->
-            <div class="mobile-menu-area home-3 visible-sm visible-xs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 visible-sm visible-xs">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul>
-                                        <li><a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="index-2.html">Home version-02</a></li>
-                                                    <li><a href="index-3.html">Home version-03</a></li>
-                                                    <li><a href="index-4.html">Home version-04</a></li>
-                                                    <li><a href="index-5.html">Home version-05</a></li>
-                                                    <li><a href="index-6.html">Home version-06</a></li>
-                                            </ul>									
-                                        </li>
-                                        <li><a href="#">Bedroom</a>
-                                            <ul>
-                                                <li><a href="shop.html">Beds</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Platform Beds</a></li>
-                                                        <li><a href="shop.html">Storage Beds</a></li>
-                                                        <li><a href="shop.html">Regular Beds</a></li>
-                                                        <li><a href="shop.html">Sleigh Beds</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Furniture</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Wood</a></li>
-                                                        <li><a href="shop.html">Sofa</a></li>
-                                                        <li><a href="shop.html">Mahogany</a></li>
-                                                        <li><a href="shop.html">Glass</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="shop.html">Nightstands</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Brown Finish</a></li>
-                                                        <li><a href="shop.html">Distressed</a></li>
-                                                        <li><a href="shop.html">Cherry Finish</a></li>
-                                                        <li><a href="shop.html">Weathered</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="shop.html">Headboards</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Upholstered</a></li>
-                                                        <li><a href="shop.html">Tufted</a></li>
-                                                        <li><a href="shop.html">Storage</a></li>
-                                                        <li><a href="shop.html">Padded</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop.html">Living Room</a>
-                                            <ul>
-                                                <li><a href="shop.html">Living Chairs</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">armchairs</a></li>
-                                                        <li><a href="shop.html">Living</a></li>
-                                                        <li><a href="shop.html">mattress</a></li>
-                                                        <li><a href="shop.html">bunk bed</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Living Tables</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">bedspread</a></li>
-                                                        <li><a href="shop.html">chest</a></li>
-                                                        <li><a href="shop.html">trunk</a></li>
-                                                        <li><a href="shop.html">wardrobe</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Ottomans</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Bootees Bags</a></li>
-                                                        <li><a href="shop.html">shelf</a></li>
-                                                        <li><a href="shop.html">Jackets</a></li>
-                                                        <li><a href="shop.html">Shoes</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="shop.html">sink</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Shorts</a></li>
-                                                        <li><a href="shop.html">Dresses</a></li>
-                                                        <li><a href="shop.html">Trousers</a></li>
-                                                        <li><a href="shop.html">Skirts</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop.html">Dining Room</a>
-                                            <ul>
-                                                <li><a href="shop.html">Dining tables</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">armchairs</a></li>
-                                                        <li><a href="shop.html">Living</a></li>
-                                                        <li><a href="shop.html">mattress</a></li>
-                                                        <li><a href="shop.html">bunk bed </a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="shop.html">Dining chairs</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">hoodies</a></li>
-                                                        <li><a href="shop.html">Ankle</a></li>
-                                                        <li><a href="shop.html">SFootwear</a></li>
-                                                        <li><a href="shop.html">Wedges</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="shop.html">Dining sets</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Long Sleeve</a></li>
-                                                        <li><a href="shop.html">Short Sleeve</a></li>
-                                                        <li><a href="shop.html">Polo Short Sleeve</a></li>
-                                                        <li><a href="shop.html">Heeled sandals</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="shop.html">Dining storage</a>
-                                                    <ul>
-                                                        <li><a href="shop.html"></a></li>
-                                                        <li><a href="shop.html">Blazers</a></li>
-                                                        <li><a href="shop.html">Jackets</a></li>
-                                                        <li><a href="shop.html">Raincoats</a></li>
-                                                        <li><a href="shop.html">Trousers</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop.html">pages</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="shop.html">Office</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                                <li><a href="shop.html">shop page</a></li>
-                                                <li><a href="shop-list.html">shop list</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                                <li><a href="my-account.html">My account</a></li>
-                                                <li><a href="about-us.html">about us</a></li>
-                                                <li><a href="single-product.html">single product</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop.html">Office</a></li>
-                                        <li><a href="contact-us.html">contact us</a></li>
-                                    </ul>
-                                </nav>						
-                            </div>					
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- mobile-menu-area end -->
+                <!-- mobile-menu-area end -->
+                <!--header-area-end-->
+            {% endblock %}
         </header>
         <!--header-area-end-->
-    {% endblock %}
+
     {% block flashes %}
         <div id="flashes-container">
             {% for type in ['success', 'error', 'notice'] %}
@@ -628,72 +614,6 @@
             <!--footer-bottom-area-end-->
         </footer>
         {% endblock %}
-        <!-- Quickview-product-strat -->
-        <div id="quickview-wrapper">
-            <!-- Modal -->
-            <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <!-- modal-content-start-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-product">
-                                <!-- product-images -->
-                                <div class="product-images">
-                                    <div class="main-image images">
-                                        <img alt="" src="{{ asset('chamo/img/product/8.jpg') }}">
-                                    </div>
-                                </div>
-                                <!-- product-images -->
-                                <!-- product-info -->
-                                <div class="product-info">
-                                    <h1>Pellentesque habitant</h1>
-                                    <div class="price-box-3">
-                                        <div class="s-price-box">
-                                            <span class="normal-price">£333.00</span>
-                                        </div>
-                                    </div>
-                                    <a href="shop.html" class="see-all">See all features</a>
-                                    <div class="quick-add-to-cart">
-                                        <form method="post" class="cart">
-                                            <div class="numbers-row">
-                                                <input type="number" id="french-hens" value="3">
-                                            </div>
-                                            <button class="single_add_to_cart_button" type="submit">Add to cart</button>
-                                        </form>
-                                    </div>
-                                    <div class="quick-desc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
-                                    </div>
-                                    <div class="social-sharing">
-                                        <div class="widget widget_socialsharing_widget">
-                                            <h3 class="widget-title-modal">Share this product</h3>
-                                            <ul class="social-icons">
-                                                <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info -->
-                            </div>
-                            <!-- modal-product -->
-                        </div>
-                        <!-- modal-body -->
-                    </div>
-                    <!-- modal-content -->
-                </div>
-                <!-- modal-dialog -->
-            </div>
-            <!-- END Modal -->
-        </div>
-        <!-- End quickview product --> 
-      
 		<!-- all js here -->
 		<!-- jquery latest version -->
     {# javascripts... #}

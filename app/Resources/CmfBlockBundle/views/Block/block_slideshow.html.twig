@@ -1,0 +1,23 @@
+{% extends sonata_block.templates.block_base %}
+{% block block %}
+    <!-- slider start-->
+    <div class="slider-area">
+        <div class="bend niceties preview-1">
+            <div id="ensign-nivoslider" class="slides">
+                {% if block.children %}
+                    {% for item in block.children %}
+                        {{ sonata_block_render(item) }}
+                    {% endfor %}
+                {% endif %}
+            </div>
+            {% if block.children %}
+                {% for item in block.children %}
+                    <!-- direction 1 -->
+                    <div id="slider-direction-{{ item.label }}" class="t-cn slider-direction slider-one"></div>
+                {% endfor %}
+            {% endif %}
+
+        </div>
+    </div>
+    <!-- slider end-->
+{% endblock %}

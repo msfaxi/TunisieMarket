@@ -28,7 +28,7 @@
             {%- set attributes = attributes|merge({'class': classes|join(' ')}) %}
         {%- endif %}
         {# displaying the item #}
-        <li class="angle-down">
+        <li>
             {%- if item.uri is not empty and (not item.current or options.currentAsLink) %}
                 {{ block('linkElement') }}
             {%- else %}

@@ -1,0 +1,63 @@
+{% extends 'SyliusWebBundle:Frontend:layout.html.twig' %}
+
+{% block content %}
+<div class="shop-menu-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="shop-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="separator"><i class="fa fa-angle-right"></i></li>
+                        <li>Login</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="customer-login-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="customer-login my-account">
+                    <form action="{{ path('sylius_user_security_check') }}" method="post" class="form-horizontal" >
+                        {{ form_errors(form) }}
+                        <div class="form-fields">
+                            <h2>{{ 'sylius.ui.login_sylius_store'|trans|raw }}</h2>
+                            <p class="form-row form-row-wide">
+                                {{ form_row(form._username, {'attr': {'class': 'input-text'}}) }}
+                            </p>
+                            <p class="form-row form-row-wide">
+                                {{ form_row(form._password, {'attr': {'class': 'input-text'}}) }}
+                            </p>
+                            <label for="registration" class="inline">
+                                <a href="{{ path('sylius_user_registration') }}">{{ 'sylius.security.login.no_account'|trans }}</a>
+                            </label>
+                        </div>
+                        <div class="form-action">
+                            <p class="lost_password">
+                                <a href="{{ path('sylius_user_request_password_reset_token') }}">{{ 'sylius.ui.forgot_password'|trans }}</a>
+                            </p>
+                            {{ form_rest(form) }}
+                            <div class="actions">
+                               <a href="#"  onclick="$(this).closest('form').submit()" >{{ 'sylius.ui.login_button'|trans }}</a>
+                            </div>
+                            <label for="rememberme" class="inline">
+                                    {{ 'sylius.form.user.remember_me'|trans }} &nbsp; <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if error %}
+    <div class="alert alert-danger">
+        {{ error.messageKey|trans(error.messageData, 'security') }}
+    </div>
+{% endif %}
+{% endblock %}

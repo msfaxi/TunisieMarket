@@ -2488,21 +2488,21 @@ input#rememberme { margin-right: 3px; margin-top: 0; position: relative; top: 0p
     31. Product Modal
 -----------------------------*/   
 .modal { z-index: 13000 }
-#productModal .modal-dialog { margin: 5% auto; max-width: 96%; min-height: 300px;
+.productModal .modal-dialog { margin: 5% auto; max-width: 96%; min-height: 300px;
     padding: 20px; transition: all 0.5s ease 0s; width: 870px;
 }
-#productModal .modal-header { border: 0 none; padding: 0; min-height: auto;
+.productModal .modal-header { border: 0 none; padding: 0; min-height: auto;
 }
-#productModal button.close { position: absolute; right: 10px;top: 10px;
+.productModal button.close { position: absolute; right: 10px;top: 10px;
     transition: all 0.3s ease 0s;z-index: 2;
 }
-#productModal button.close:hover {opacity: 1;
+.productModal button.close:hover {opacity: 1;
 }
-#productModal button.close span {border: 1px solid #909295;border-radius: 60px;
+.productModal button.close span {border: 1px solid #909295;border-radius: 60px;
     color: #909295; display: block; height: 30px; line-height: 25px;
     text-align: center; width: 30px; padding-top: 1px;
 }
-#productModal button.close:hover span {color: #f26522;
+.productModal button.close:hover span {color: #f26522;
 }
 #quickview-wrapper .modal-content {border-radius: 0;
 }

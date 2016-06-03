@@ -29,7 +29,7 @@ class FrontendMenuBuilder extends BaseFrontendMenuBuilder
         ]);
         $menu->setCurrentUri($this->request->getRequestUri());
 
-        if ($this->cartProvider->hasCart()) {
+       /* if ($this->cartProvider->hasCart()) {
             $cart = $this->cartProvider->getCart();
             $cartTotals = ['items' => $cart->getTotalQuantity(), 'total' => $cart->getTotal()];
         } else {
@@ -46,7 +46,7 @@ class FrontendMenuBuilder extends BaseFrontendMenuBuilder
         ])->setLabel($this->translate('sylius.frontend.menu.main.cart', [
             '%items%' => $cartTotals['items'],
             '%total%' => $this->currencyHelper->convertAndFormatAmount($cartTotals['total']),
-        ]));
+        ]));*/
 
         if ($this->authorizationChecker->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
             $route = $this->request === null ? '' : $this->request->get('_route');

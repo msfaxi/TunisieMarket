@@ -1,5 +1,9 @@
 {% extends 'SyliusWebBundle:Frontend:layout.html.twig' %}
-
+{% from 'SyliusWebBundle:Frontend/Macros:quickviewproduct.html.twig' import quickviewproduct %}
+{% block header %}
+{{ sonata_block_render({'name': '/cms/blocks/home'}) }}
+    {{ parent() }}
+ {% endblock %}
 {% block content %}
     <!-- banner-area start -->
     <div class="banner-area home-6">
@@ -54,7 +58,7 @@
                                             <div class="action-link">
                                                 <a href="#"  data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart-o"></i></a>
                                                 <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
-                                                <a data-toggle="modal" data-target="#productModal" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                                                <a data-toggle="modal" data-target="#productModal{{ newProduct.id }}" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -991,5 +995,8 @@
             </div>
         </div>
     </div>
+{% for newProduct in newProducts %}
+    {{ quickviewproduct(newProduct) }}
+{% endfor %}
     <!--brand-area-end-->
 {% endblock %}

@@ -1,0 +1,122 @@
+{% macro quickviewproduct(product) %}
+    {% from 'SyliusWebBundle:Frontend/Product:macros.html.twig' import sylius_display_price, list %}
+    <!-- Quickview-product-strat -->
+    <div id="quickview-wrapper">
+        <!-- Modal -->
+        <div class="modal productModal fade" id="productModal{{ product.id }}" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <!-- modal-content-start-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-product">
+                            <!-- product-images -->
+                            <div class="product-images">
+                                <div class="main-image images">
+                                    <img alt="" src="{{ product.image ? product.image.path|imagine_filter('sylius_medium') : 'http://placehold.it/50x40' }}">
+                                </div>
+                            </div>
+                            <!-- product-images -->
+                            <!-- product-info -->
+                            <div class="product-info">
+                                <h1>{{ product.name }}</h1>
+                                <div class="price-box-3">
+                                    <div class="s-price-box">
+                                        <span class="normal-price"> {{ product.masterVariant.price|sylius_price }}</span>
+                                    </div>
+                                </div>
+                              {#  <a href="shop.html" class="see-all">See all features</a>#}
+                                <div class="quick-add-to-cart">
+                                    <form action="{{ path('sylius_cart_item_add', {'id': product.id}) }}" method="post" class="clearfix">
+                                        {% set form = sylius_cart_form({'product': product}) %}
+                                        <p class="normal-price"> {% if product.hasVariants %}
+                                            {% if product.isVariantSelectionMethodChoice %}
+                                                <table class="table table-condensed" id="product-variants">
+                                                    <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>{{ 'sylius.ui.price'|trans }}</th>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for variant in product.variants if variant.available %}
+                                                        <tr>
+                                                            <td>
+                                                                {% if variant.presentation is empty %}
+                                                                    <ul class="unstyled">
+                                                                        {% for option in variant.options %}
+                                                                            <li><strong>{{ option.presentation }}</strong>: {{ option.value }}</li>
+                                                                        {% endfor %}
+                                                                    </ul>
+                                                                {% else %}
+                                                                    {{ variant.presentation }}
+                                                                {% endif %}
+                                                            </td>
+                                                            <td>
+                                                                {{ sylius_display_price(variant) }}
+                                                            </td>
+                                                            <td>
+                                                                {% if sylius_inventory_is_available(variant) %}
+                                                                    {{ form_widget(form.variant[loop.index0]) }}
+                                                                {% else %}
+                                                                    <span class="label label-warning">{{ 'sylius.ui.out_of_stock'|trans }}</span>
+                                                                {% endif %}
+                                                            </td>
+                                                        </tr>
+                                                    {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            {% else %}
+                                                <div class="well clearfix">
+                                                    {{ form_widget(form.variant) }}
+                                                </div>
+                                                {% endif %}
+                                            {% else %}
+                                                <h4>
+                                        <span class="pull-right">
+                                            {{ sylius_display_price(product.masterVariant) }}
+                                        </span>
+                                                    {{ 'sylius.ui.price'|trans }}
+                                                </h4>
+                                        {% endif %}
+
+                                        <div class="numbers-row">
+                                            {{ form_widget(form.quantity, {'attr': {'class': 'center-text'}, 'empty_value': '1'}) }}
+                                        </div>
+                                        {{ form_widget(form._token) }}
+                                        <button class="single_add_to_cart_button" type="submit">Add to cart</button>
+                                    </form>
+                                </div>
+                                <div class="quick-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
+                                </div>
+                                <div class="social-sharing">
+                                    <div class="widget widget_socialsharing_widget">
+                                        <h3 class="widget-title-modal">Share this product</h3>
+                                        <ul class="social-icons">
+                                            <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product-info -->
+                        </div>
+                        <!-- modal-product -->
+                    </div>
+                    <!-- modal-body -->
+                </div>
+                <!-- modal-content -->
+            </div>
+            <!-- modal-dialog -->
+        </div>
+        <!-- END Modal -->
+    </div>
+    <!-- End quickview product -->
+{% endmacro %}

@@ -5,12 +5,211 @@
 {% from 'SyliusWebBundle:Frontend/Product:macros.html.twig' import list %}
 
 {% block content %}
-<div class="page-header">
-    <h1>{{ 'sylius.ui.products_categorized_under_taxon_taxon'|trans({'%taxon%': taxon.name})|raw }}</h1>
-</div>
+<div class="shop-product-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <!-- Left-Sidebar-start-->
+                <div class="left-sidebar-title">
+                    <h2>Shopping Options</h2>
+                </div>
+                <!-- Shop-Layout-start -->
+                <div class="left-sidebar">
+                    <div class="shop-layout">
+                        <div class="layout-title">
+                            <h2>Category</h2>
+                        </div>
+                        <div class="layout-list">
+                            <ul>
+                                <li><a href="#">Bags</a><span>(9)</span></li>
+                                <li><a href="#">Tops &amp; Tees</a><span>(8)</span></li>
+                                <li><a href="#">Lingerie</a><span>(10)</span></li>
+                                <li><a href="#">jeans pants</a><span>(15)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Shop-Layout-end -->
+                    <!-- Price-Filter-start -->
+                    <div class="price-filter-area shop-layout">
+                        <div class="price-filter">
+                            <div class="layout-title">
+                                <h2>Price</h2>
+                            </div>
+                            <p>
+                                <label class="range-text">Range:</label>
+                                <input type="text" style="border:0; color:#f6931f; font-weight:bold;" readonly="" id="amount">
+                            </p>
+                            <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 100%;"></span><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div></div>
+                            <button class="btn btn-default">show</button>
+                        </div>
+                    </div>
+                    <!-- Price-Filter-end -->
+                    <!-- Shop-Layout-start -->
+                    <div class="shop-layout">
+                        <div class="layout-title">
+                            <h2>Manufacturer</h2>
+                        </div>
+                        <div class="layout-list">
+                            <ul>
+                                <li><a href="#">Adidas</a><span>(2)</span></li>
+                                <li><a href="#">Chanel</a><span>(2)</span></li>
+                                <li><a href="#">DKNY</a><span>(1)</span></li>
+                                <li><a href="#">Dolce</a><span>(2)</span></li>
+                                <li><a href="#">Gabbana</a><span>(3)</span></li>
+                                <li><a href="#">Nike</a><span>(4)</span></li>
+                                <li><a href="#">Vogue</a><span>(2)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Shop-Layout-end -->
+                    <!-- Shop-Layout-start -->
+                    <div class="shop-layout">
+                        <div class="layout-title">
+                            <h2>Color</h2>
+                        </div>
+                        <div class="layout-list">
+                            <ul>
+                                <li><a href="#">Black</a><span>(1)</span></li>
+                                <li><a href="#">Blue</a><span>(2)</span></li>
+                                <li><a href="#">Brown</a><span>(3)</span></li>
+                                <li><a href="#">Pink</a><span>(3)</span></li>
+                                <li><a href="#">Red</a><span>(2)</span></li>
+                                <li><a href="#">While</a><span>(2)</span></li>
+                                <li><a href="#">Yellow</a><span>(3)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Shop-Layout-end -->
+                </div>
+                <!-- End-Left-Sidebar -->
+                <!-- Shop-compare-start -->
+                <div class="shop-banner-area">
+                    <div class="left-sidebar-title">
+                        <h2 class="compare-title contact">Compare Products</h2>
+                    </div>
+                    <div class="layout-list compare">
+                        <ul>
+                            <li><a href="#">occaecati cupiditate</a><span class="compare-icon"><i class="fa fa-trash"></i></span></li>
+                            <li><a href="#">consequences</a><span class="compare-icon"><i class="fa fa-trash"></i></span></li>
+                            <li><a href="#">pleasure rationally</a><span class="compare-icon"><i class="fa fa-trash"></i></span></li>
+                        </ul>
+                        <div class="compare-action">
+                            <div class="clear-button">
+                                <a href="#">clear all</a>
+                            </div>
+                            <div class="product-cart compare">
+                                <button class="button">compare</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shop-compare-end -->
+                <!-- Shop-Layout-Banner-start -->
+                <div class="shop-banner-area">
+                    <div class="single-banner">
+                        <a href="#">
+                                <span>
+                                    <img src="img/shop/shop-ba.jpg" alt="banner">
+                                </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Shop-Layout-Banner-end -->
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                <!-- Shop-Product-View-start -->
+                <div class="shop-product-view">
+                    <!-- Shop Product Tab Area -->
+                    <div class="product-tab-area">
+                        <!-- Tab Bar -->
+                        <div class="tab-bar">
+                            <div class="tab-bar-inner">
+                                <ul role="tablist" class="nav nav-tabs">
+                                    <li class="active"><a title="Grid" data-toggle="tab" href="#shop-product" aria-expanded="true"><i class="fa fa-th-large"></i><span class="grid" title="Grid">Grid</span></a></li>
+                                    <li class=""><a title="List" data-toggle="tab" href="#shop-list" aria-expanded="false"><i class="fa fa-list"></i><span class="list">List</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="toolbar">
+                                <div class="sorter">
+                                    <div class="sort-by">
+                                        <label class="sort-none">Sort By</label>
+                                        <select>
+                                            <option value="position">Position</option>
+                                            <option value="name">Name</option>
+                                            <option value="price">Price</option>
+                                        </select>
+                                        <a class="up-arrow" href="#"><i class="fa fa-long-arrow-up"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pager-list">
+                                    <div class="limiter">
+                                        <label>Show</label>
+                                        <select>
+                                            <option value="9">9</option>
+                                            <option value="12">12</option>
+                                            <option value="24">24</option>
+                                            <option value="36">36</option>
+                                        </select>
+                                        per page
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End-Tab-Bar -->
+                        <!-- Tab-Content -->
+                        <div class="tab-content">
+                            <!-- Shop Product-->
+                            <div id="shop-product" class="tab-pane active">
+                                <!-- Single Shop start-->
+                                {{ list(products) }}
+                                <!-- Single Shop end-->
+                            </div>
 
+                        </div>
+                            <!-- End Shop List -->
+                        </div>
+                        <!-- End Tab Content -->
+                        <!-- Tab Bar -->
+                        <div class="tab-bar tab-bar-bottom">
+                            <div class="tab-bar-inner">
+                                <ul role="tablist" class="nav nav-tabs">
+                                    <li><a title="Grid" data-toggle="tab" href="#shop-product"><i class="fa fa-th-large"></i><span class="grid" title="Grid">Grid</span></a></li>
+                                    <li class="active"><a title="List" data-toggle="tab" href="#shop-list"><i class="fa fa-list"></i><span class="list">List</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="toolbar">
+                                <div class="sorter">
+                                    <div class="sort-by">
+                                        <label class="sort-none">Sort By</label>
+                                        <select>
+                                            <option value="position">Position</option>
+                                            <option value="name">Name</option>
+                                            <option value="price">Price</option>
+                                        </select>
+                                        <a class="up-arrow" href="#"><i class="fa fa-long-arrow-up"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pages">
+                                    <strong>Page:</strong>
+                                    <ol>
+                                        <li class="current">1</li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#" title="Next"><i class="fa fa-arrow-right"></i></a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Tab Bar -->
+                    </div>
+                    <!-- End Shop Product Tab Area -->
+                </div>
+                <!-- End Shop Product View -->
+            </div>
+        </div>
+    </div>
+</div>
 {{ pagination(products) }}
-{{ list(products) }}
+
 {{ pagination(products) }}
 
 {% endblock %}

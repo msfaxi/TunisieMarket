@@ -1,0 +1,58 @@
+{% extends 'SyliusWebBundle:Frontend:layout.html.twig' %}
+
+{% block content %}
+    <div class="shop-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="shop-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="separator"><i class="fa fa-angle-right"></i></li>
+                            <li>Register</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer-login-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="customer-register my-account">
+                        {{ form_errors(form) }}
+                        <form action="{{ path('sylius_user_registration') }}" method="post" class="form-horizontal" >
+                            <div class="form-fields rs-login-mar">
+                                <h2>Register</h2>
+                                <p class="form-row form-row-wide">
+                                    {{ form_row(form.firstName, {'attr': {'class': 'input-text'}}) }}
+                                </p>
+                                <p class="form-row form-row-wide">
+                                    {{ form_row(form.lastName, {'attr': {'class': 'input-text'}}) }}
+                                </p>
+                                <p class="form-row form-row-wide">
+                                    {{ form_row(form.email, {'attr': {'class': 'input-text'}}) }}
+                                </p>
+                                <p class="form-row form-row-wide">
+                                    {{ form_row(form.user.plainPassword, {'attr': {'class': 'input-text'}}) }}
+                                </p>
+                                {{ form_rest(form) }}
+                                <div style="left: -999em; position: absolute;">
+                                    <label for="trap">Anti-spam</label>
+                                    <input type="text" name="email_2" id="trap" tabindex="-1">
+                                </div>
+                            </div>
+                            <div class="form-action">
+                                <div class="actions">
+                                    <a href="#"  onclick="$(this).closest('form').submit()" >{{ 'sylius.ui.register_button'|trans|raw }}</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
