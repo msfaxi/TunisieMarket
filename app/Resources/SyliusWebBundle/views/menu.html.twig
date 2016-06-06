@@ -2,9 +2,11 @@
 
 {% block list %}
     {% if item.hasChildren and options.depth is not sameas(0) and item.displayChildren %}
+    <div class="layout-list">
         <ul>
             {{ block('children') }}
         </ul>
+    </div>
     {% endif %}
 {% endblock %}
 

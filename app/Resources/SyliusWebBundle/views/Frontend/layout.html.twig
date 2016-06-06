@@ -57,7 +57,6 @@
 
         <header>
             {% block header %}
-
                 <div class="home-3-header-top">
                     <!--header-area-start-->
                     <div class="container">
@@ -116,19 +115,7 @@
                                     <!-- cart-total-end -->
                                     <!-- header-search-start -->
                                     <div class="header-search home-3">
-                                        <form action="#">
-                                            <ul>
-                                                <li class="search-hover home-3">
-                                                    <a class="icon" href="#"><i class="fa fa-search"></i></a>
-                                                    <div class="search home-3">
-                                                        <input type="text" placeholder="Enter keywords to search...">
-                                                        <button>
-                                                            <i class="fa fa-search"></i>
-                                                        </button>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </form>
+                                        {% render controller('sylius.controller.search:formAction', {'request':app.request}) %}
                                     </div>
                                     <!-- header-search end -->
                                     <!--header-link-area-start-->

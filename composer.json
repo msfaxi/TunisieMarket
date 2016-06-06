@@ -22,7 +22,7 @@
     "require": {
         "php": ">=5.5.9",
 
-        "sylius/sylius": "0.18.*@dev",
+        "sylius/sylius": "0.18.0",
         "sensio/generator-bundle": "^2.3",
         "sensio/distribution-bundle": "^3.0"
     },
@@ -35,7 +35,7 @@
         "behat/mink":  "^1.6",
         "coduo/php-matcher": "^2.1@dev",
         "phpspec/phpspec": "^2.4",
-        "phpunit/phpunit": "^4.1",
+        "phpunit/phpunit": "^4.8",
         "lakion/api-test-case": "^1.0@dev"
     },
     "minimum-stability": "RC",

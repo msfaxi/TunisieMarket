@@ -1,0 +1,18 @@
+{#This form has no form type. I could use a form type but there is no data binding with a model#}
+{#and also I don't currently need any validation.#}
+
+{#For a future release I could move it to a form type if there is a good reason for it.#}
+<form action="{{ path('sylius_search_homepage') }}" method="{{ requestMethod }}">
+    <ul>
+        <li class="search-hover home-3">
+            <a class="icon" href="#"><i class="fa fa-search"></i></a>
+            <div class="search home-3">
+                <input type="hidden" name="search_param" value="{{ searchParam ?: 'all' }}" id="search_param">
+                <input type="text" class="form-control" id="search" placeholder="Search term..." name="q" value="{{ searchTerm ?: '' }}">
+                <button id="search-button" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </li>
+    </ul>
+</form>

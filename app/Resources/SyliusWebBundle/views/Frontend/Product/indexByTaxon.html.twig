@@ -16,17 +16,7 @@
                 <!-- Shop-Layout-start -->
                 <div class="left-sidebar">
                     <div class="shop-layout">
-                        <div class="layout-title">
-                            <h2>Category</h2>
-                        </div>
-                        <div class="layout-list">
-                            <ul>
-                                <li><a href="#">Bags</a><span>(9)</span></li>
-                                <li><a href="#">Tops &amp; Tees</a><span>(8)</span></li>
-                                <li><a href="#">Lingerie</a><span>(10)</span></li>
-                                <li><a href="#">jeans pants</a><span>(15)</span></li>
-                            </ul>
-                        </div>
+                        {{ knp_menu_render('sylius.frontend.taxons', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
                     </div>
                     <!-- Shop-Layout-end -->
                     <!-- Price-Filter-start -->
@@ -35,12 +25,13 @@
                             <div class="layout-title">
                                 <h2>Price</h2>
                             </div>
-                            <p>
+                            {% include 'SyliusSearchBundle::filter_form.html.twig' %}<br>
+                            {#<p>
                                 <label class="range-text">Range:</label>
                                 <input type="text" style="border:0; color:#f6931f; font-weight:bold;" readonly="" id="amount">
                             </p>
                             <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 100%;"></span><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div></div>
-                            <button class="btn btn-default">show</button>
+                            <button class="btn btn-default">show</button>#}
                         </div>
                     </div>
                     <!-- Price-Filter-end -->
