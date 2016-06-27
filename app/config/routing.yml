@@ -8,3 +8,14 @@ sylius_admin:
 
 sylius_web:
     resource: "@SyliusWebBundle/Resources/config/routing/main.yml"
+
+webburza_sylius_wishlist_bundle:
+    resource: "@WebburzaSyliusWishlistBundle/Resources/config/routing.yml"
+
+webburza_sylius_wishlist_bundle_front:
+    resource: "@WebburzaSyliusWishlistBundle/Resources/config/routingFront.yml"
+    prefix: /wishlist
+
+webburza_sylius_wishlist_bundle_account:
+    resource: "@WebburzaSyliusWishlistBundle/Resources/config/routingAccount.yml"
+    prefix: /account/wishlists

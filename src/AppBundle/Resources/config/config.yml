@@ -1,6 +1,5 @@
 parameters:
     sylius.controller.frontend.homepage.class: AppBundle\Controller\FrontEnd\HomepageController
-
 sylius_search:
     orm_indexes: # it is being used only when orm is selected as a driver
         product: # indentifier of an index
@@ -84,6 +83,8 @@ fos_elastica:
                          made_of:
                             type: string
                             index: not_analyzed
+                         attributes: ~
+
 
                      persistence:
                          driver: orm

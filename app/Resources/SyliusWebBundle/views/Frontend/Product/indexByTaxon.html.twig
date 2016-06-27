@@ -18,59 +18,7 @@
                     <div class="shop-layout">
                         {{ knp_menu_render('sylius.frontend.taxons', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
                     </div>
-                    <!-- Shop-Layout-end -->
-                    <!-- Price-Filter-start -->
-                    <div class="price-filter-area shop-layout">
-                        <div class="price-filter">
-                            <div class="layout-title">
-                                <h2>Price</h2>
-                            </div>
-                            {% include 'SyliusSearchBundle::filter_form.html.twig' %}<br>
-                            {#<p>
-                                <label class="range-text">Range:</label>
-                                <input type="text" style="border:0; color:#f6931f; font-weight:bold;" readonly="" id="amount">
-                            </p>
-                            <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 100%;"></span><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div></div>
-                            <button class="btn btn-default">show</button>#}
-                        </div>
-                    </div>
-                    <!-- Price-Filter-end -->
-                    <!-- Shop-Layout-start -->
-                    <div class="shop-layout">
-                        <div class="layout-title">
-                            <h2>Manufacturer</h2>
-                        </div>
-                        <div class="layout-list">
-                            <ul>
-                                <li><a href="#">Adidas</a><span>(2)</span></li>
-                                <li><a href="#">Chanel</a><span>(2)</span></li>
-                                <li><a href="#">DKNY</a><span>(1)</span></li>
-                                <li><a href="#">Dolce</a><span>(2)</span></li>
-                                <li><a href="#">Gabbana</a><span>(3)</span></li>
-                                <li><a href="#">Nike</a><span>(4)</span></li>
-                                <li><a href="#">Vogue</a><span>(2)</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Shop-Layout-end -->
-                    <!-- Shop-Layout-start -->
-                    <div class="shop-layout">
-                        <div class="layout-title">
-                            <h2>Color</h2>
-                        </div>
-                        <div class="layout-list">
-                            <ul>
-                                <li><a href="#">Black</a><span>(1)</span></li>
-                                <li><a href="#">Blue</a><span>(2)</span></li>
-                                <li><a href="#">Brown</a><span>(3)</span></li>
-                                <li><a href="#">Pink</a><span>(3)</span></li>
-                                <li><a href="#">Red</a><span>(2)</span></li>
-                                <li><a href="#">While</a><span>(2)</span></li>
-                                <li><a href="#">Yellow</a><span>(3)</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Shop-Layout-end -->
+                    {% include 'SyliusSearchBundle::filter_form.html.twig' %}<br>
                 </div>
                 <!-- End-Left-Sidebar -->
                 <!-- Shop-compare-start -->
@@ -181,12 +129,7 @@
                                     </div>
                                 </div>
                                 <div class="pages">
-                                    <strong>Page:</strong>
-                                    <ol>
-                                        <li class="current">1</li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#" title="Next"><i class="fa fa-arrow-right"></i></a></li>
-                                    </ol>
+                                    {{ pagination(products) }}
                                 </div>
                             </div>
                         </div>
@@ -199,8 +142,4 @@
         </div>
     </div>
 </div>
-{{ pagination(products) }}
-
-{{ pagination(products) }}
-
 {% endblock %}

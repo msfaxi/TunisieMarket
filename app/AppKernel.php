@@ -8,6 +8,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle(),
+            new \Webburza\Sylius\WishlistBundle\WebburzaSyliusWishlistBundle(),
             new \AppBundle\AppBundle()
         );
 

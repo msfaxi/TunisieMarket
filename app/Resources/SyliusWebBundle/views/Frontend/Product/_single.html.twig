@@ -1,3 +1,5 @@
+{% from 'SyliusWebBundle:Frontend/Product:macros.html.twig' import sylius_display_price %}
+{% set form = sylius_cart_form({'product': product}) %}
 <div class="single-shop single-product">
     <div class="row">
         <div class="single-shop">
@@ -35,9 +37,61 @@
                         <div class="pro-deal-text-shop">
                             <p>{{ product.shortDescription|default('sylius.ui.no_description'|trans)|raw }}</p>
                         </div>
+                        <div>
+                            {% if product.hasVariants %}
+                                {% if product.isVariantSelectionMethodChoice %}
+                                    <table class="table table-condensed" id="product-variants">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>{{ 'sylius.ui.price'|trans }}</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for variant in product.variants if variant.available %}
+                                            <tr>
+                                                <td>
+                                                    {% if variant.presentation is empty %}
+                                                        <ul class="unstyled">
+                                                            {% for option in variant.options %}
+                                                                <li><strong>{{ option.presentation }}</strong>: {{ option.value }}</li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    {% else %}
+                                                        {{ variant.presentation }}
+                                                    {% endif %}
+                                                </td>
+                                                <td>
+                                                    {{ sylius_display_price(variant) }}
+                                                </td>
+                                                <td>
+                                                    {% if sylius_inventory_is_available(variant) %}
+                                                        {{ form_widget(form.variant[loop.index0]) }}
+                                                    {% else %}
+                                                        <span class="label label-warning">{{ 'sylius.ui.out_of_stock'|trans }}</span>
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                {% else %}
+                                    <div class="well clearfix">
+                                        {{ form_widget(form.variant) }}
+                                    </div>
+                                {% endif %}
+                            {% else %}
+                                <h4>
+                                <span class="pull-right">
+                                    {{ sylius_display_price(product.masterVariant) }}
+                                </span>
+                                    {{ 'sylius.ui.price'|trans }}
+                                </h4>
+                            {% endif %}
+                        </div>
                         <div class="product-cart-shop">
                             {% if sylius_inventory_is_available(product.masterVariant) %}
-                                {% set form = sylius_cart_form({'product': product}) %}
                                 {{ form_widget(form.quantity, {'attr': {'class': 'center-text'}, 'empty_value': '1'}) }}
                                 {{ form_widget(form._token) }}
                                 <div class="button-shop">
@@ -48,7 +102,7 @@
                             {% endif %}
                             <div class="product-action-shop">
                                 <div class="action-link-shop">
-                                    <a href="#" data-toggle="tooltip" title="" data-original-title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                    <a href="#" id="wishlist" data-toggle="tooltip" data-product = {{ product.masterVariant.id }}  title="" data-original-title="Wishlist"><i class="fa fa-heart-o"></i></a>
                                     <a href="#" data-toggle="tooltip" title="" data-original-title="Compare"><i class="fa fa-random"></i></a>
                                 </div>
                             </div>

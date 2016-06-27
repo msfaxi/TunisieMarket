@@ -204,4 +204,19 @@
         tintOpacity:0.4,
     });
 
+    // add wishlist
+$('#wishlist').on('click', function() {
+    $.ajax({
+        url: '/wishlist/item/',
+        type: 'POST',
+        data: {
+            product_variant_id: $(this).data('product'),
+        },
+        success : function(code_html, statut){
+            // code_html contient le HTML renvoyé
+            alert('votre produit a bien été ajouter a votre wishliste')
+        }
+    });
+})
+
 })(jQuery);
