@@ -1,0 +1,42 @@
+{% from 'SyliusWebBundle:Frontend/Product:macros.html.twig' import sylius_display_price %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+    <div class="single-product">
+        <div class="product-img">
+            <a href="{{ path(product) }}" class="pull-left"
+               title="{{ 'sylius.ui.view_product_details'|trans({'%product%': product.name})|escape('html_attr') }}">
+                <img src="{{ product.image ? product.image.path|imagine_filter('sylius_large') : 'http://placehold.it/50x40' }}" alt="" class="primary-img" />
+            </a>
+            <div class="product-action">
+                <div class="pro-rating">
+                    <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                </div>
+                <div class="action-link">
+                    {% if app.user %}
+                        <a href="#" id="wishlist" data-toggle="tooltip" data-product="38" title="" data-original-title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                    {% else %}
+                        <a data-toggle="modal" data-target="#loginModal" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                    {% endif %}
+                    <a href="#"  data-toggle="tooltip" title="Compare"><i class="fa fa-random"></i></a>
+                    <a data-toggle="modal" data-target="#productModal{{ product.id }}" href="#" title="Quick view"><i class="fa fa-eye"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-content">
+            <h2><a href="{{ path(product) }}" >{{ product.name }}</a></h2>
+            <div class="pro-price">
+                <p class="normal-price"> {{ product.masterVariant.price|sylius_price }}</p>
+            </div>
+            <div class="product-cart">
+                <a data-toggle="modal" data-target="#productModal{{ product.id }}" href="#" title="Quick view">
+                    <button class="button">Add to cart</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
